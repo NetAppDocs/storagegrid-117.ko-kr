@@ -1,0 +1,56 @@
+---
+permalink: sg6000/removing-fibre-channel-hba.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel, remove, removing, removal 
+summary: 'SG6000-CN 컨트롤러의 파이버 채널 호스트 버스 어댑터 \(HBA\)가 최적의 상태로 작동하지 않거나 장애가 발생한 경우 이를 교체해야 할 수 있습니다.' 
+---
+= Fibre Channel HBA를 제거합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CN 컨트롤러의 파이버 채널 호스트 버스 어댑터(HBA)가 최적의 상태로 작동하지 않거나 장애가 발생한 경우 이를 교체해야 할 수 있습니다.
+
+.시작하기 전에
+* 올바른 교체용 Fibre Channel HBA가 있습니다.
+* 있습니다 link:verifying-fibre-channel-hba-to-replace.html["교체할 파이버 채널 HBA가 포함된 SG6000-CN 컨트롤러를 확인했습니다"].
+* 있습니다 link:locating-controller-in-data-center.html["SG6000-CN 컨트롤러를 물리적으로 위치했다"] 데이터 센터 내에서,
+* 있습니다 link:shutting-down-sg6000-cn-controller.html["SG6000-CN 컨트롤러를 종료합니다"].
++
+
+CAUTION: 컨트롤러를 랙에서 분리하기 전에 제어된 방식으로 종료해야 합니다.
+
+* 있습니다 link:removing-sg6000-cn-controller-from-cabinet-or-rack.html["캐비닛이나 랙에서 컨트롤러를 제거했습니다"].
+* 있습니다 link:removing-sg6000-cn-controller-cover.html["컨트롤러 덮개를 분리했습니다"].
+
+
+.이 작업에 대해
+서비스 중단을 방지하려면 Fibre Channel HBA 교체를 시작하기 전에 다른 모든 스토리지 노드가 그리드에 연결되어 있는지 확인하거나 서비스 중단이 정상적으로 예상되는 예약된 유지 보수 기간 동안 어댑터를 교체하십시오. 에 대한 정보를 참조하십시오 link:../monitor/monitoring-system-health.html#monitor-node-connection-states["노드 연결 상태를 모니터링합니다"].
+
+
+IMPORTANT: 개체의 복사본을 하나만 생성하는 ILM 규칙을 사용한 적이 있는 경우 예약된 유지 관리 기간 동안 파이버 채널 HBA를 교체해야 합니다. 그렇지 않으면 이 절차 중에 해당 개체에 대한 액세스가 일시적으로 끊어질 수 있습니다. 에 대한 정보를 참조하십시오 link:../ilm/why-you-should-not-use-single-copy-replication.html["단일 복사본 복제를 사용하지 않아야 하는 이유"].
+
+.단계
+. ESD 밴드의 스트랩 끝을 손목 둘레에 감고 클립 끝을 금속 바닥에 단단히 고정하여 정전기 방전을 방지하십시오.
+. 파이버 채널 HBA를 포함하는 컨트롤러 후면에서 라이저 어셈블리를 찾습니다.
++
+image::../media/sg6060_riser_assembly_location.jpg[SG6060 라이저 조립품 위치]
+
+. 파란색 표시가 있는 구멍을 통해 라이저 조립품을 잡고 조심스럽게 위로 들어 올립니다. 라이저 조립품을 들어 올릴 때 섀시 앞쪽으로 이동하여 설치된 어댑터의 외부 커넥터가 섀시에서 분리되도록 합니다.
+. 라이저 카드를 금속 프레임 면이 아래로 향하게 하여 평평한 정전기 방지 표면에 놓고 어댑터에 액세스합니다.
++
+image::../media/sg6060_fc_hba_location.jpg[라이저 어셈블리의 SG6060 파이버 채널 HBA]
+
++
+라이저 어셈블리에는 파이버 채널 HBA와 이더넷 네트워크 어댑터의 두 어댑터가 있습니다. Fibre Channel HBA는 그림에 나와 있습니다.
+
+. 파란색 어댑터 래치(원으로 표시됨)를 열고 라이저 어셈블리에서 파이버 채널 HBA를 조심스럽게 분리합니다. 어댑터를 살짝 흔들어 커넥터에서 어댑터를 분리합니다. 과도한 힘을 가하지 마십시오.
+. 어댑터를 평평한 정전기 방지 표면에 놓습니다.
+
+
+.작업을 마친 후
+link:reinstalling-fibre-channel-hba.html["교체용 Fibre Channel HBA를 설치합니다"].
+
+부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.

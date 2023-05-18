@@ -1,0 +1,112 @@
+---
+permalink: sg6000/powering-on-sg6000-cn-controller-and-verifying-operation.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, power on, turn on, start, sg6000-cn, controller 
+summary: 유지 관리를 완료한 후 컨트롤러 전원을 켭니다. 
+---
+= SG6000-CN 컨트롤러의 전원을 켜고 작동을 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+유지 관리를 완료한 후 컨트롤러 전원을 켭니다.
+
+.시작하기 전에
+* 캐비닛이나 랙에 컨트롤러를 설치하고 데이터 및 전원 케이블을 연결했습니다.
++
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html["캐비닛 또는 랙에 SG6000-CN 컨트롤러를 다시 설치합니다"]
+
+* 데이터 센터에서 물리적으로 컨트롤러를 찾은 경우
++
+link:locating-controller-in-data-center.html["데이터 센터에서 컨트롤러를 찾습니다"]
+
+
+
+.단계
+. SG6000-CN 컨트롤러의 전원을 켜고 다음 방법 중 하나를 사용하여 컨트롤러 LED 및 부팅 코드를 모니터링합니다.
++
+** 컨트롤러 전면에 있는 전원 스위치를 누릅니다.
++
+image::../media/sg6060_front_panel_power_led_off.jpg[SG6060 전면 패널 전원 LED - 꺼짐]
+
+** 컨트롤러 BMC 인터페이스 사용:
++
+... 컨트롤러 BMC 인터페이스에 액세스합니다.
++
+link:../installconfig/accessing-bmc-interface.html["BMC 인터페이스에 액세스합니다"]
+
+... 전원 제어 * 를 선택합니다.
+... Power On Server * 를 선택한 다음 * Perform Action * 을 선택합니다.
++
+image::../media/sg6060_power_on_from_bmc.png[BMC에서 컨트롤러의 전원을 켭니다]
+
++
+BMC 인터페이스를 사용하여 시작 상태를 모니터링합니다.
+
+
+
+
+
+. 어플라이언스 컨트롤러가 그리드 관리자에 표시되고 경고가 표시되지 않는지 확인합니다.
++
+컨트롤러가 그리드 관리자에 표시되는 데 최대 20분이 걸릴 수 있습니다.
+
+. 새 SG6000-CN 컨트롤러가 완전히 작동하는지 확인합니다.
++
+.. PuTTY 또는 다른 ssh 클라이언트를 사용하여 그리드 노드에 로그인합니다.
++
+... 다음 명령을 입력합니다. `ssh admin@_grid_node_IP_`
+... 에 나열된 암호를 입력합니다 `Passwords.txt` 파일.
+... 루트로 전환하려면 다음 명령을 입력합니다. `su -`
+... 에 나열된 암호를 입력합니다 `Passwords.txt` 파일.
++
+루트로 로그인하면 프롬프트가 에서 변경됩니다 `$` 를 선택합니다 `#`.
+
+
+
+.. 다음 명령을 입력하고 예상 출력을 반환하는지 확인합니다. +
+`cat /sys/class/fc_host/*/port_state`
++
+예상 출력:
+
++
+[listing]
+----
+Online
+Online
+Online
+Online
+----
++
+예상 결과가 반환되지 않으면 기술 지원 부서에 문의하십시오.
+
+.. 다음 명령을 입력하고 예상 출력을 반환하는지 확인합니다. +
+`cat /sys/class/fc_host/*/speed`
++
+예상 출력:
+
++
+[listing]
+----
+16 Gbit
+16 Gbit
+16 Gbit
+16 Gbit
+----
++
+예상 결과가 반환되지 않으면 기술 지원 부서에 문의하십시오.
+
+.. 그리드 관리자의 노드 페이지에서 어플라이언스 노드가 그리드에 연결되어 있고 경고가 없는지 확인합니다.
++
+
+CAUTION: 이 어플라이언스에 녹색 아이콘이 없으면 다른 어플라이언스 노드를 오프라인으로 전환하지 마십시오.
+
+
+
+. 선택 사항: 앞면 베젤이 분리된 경우 설치합니다.
+
+
+.관련 정보
+link:../installconfig/viewing-status-indicators.html["상태 표시기를 봅니다"]

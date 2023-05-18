@@ -1,0 +1,54 @@
+---
+permalink: sg6100/removing-sgf6112-from-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, storage node, storage appliance, remove, removing, removal, cabinet, rack, appliance, sgf6112 
+summary: 캐비닛 또는 랙에서 SGF6112를 분리하여 상단 덮개에 액세스하거나 제품을 다른 위치로 옮기십시오. 
+---
+= 캐비닛 또는 랙에서 SGF6112를 제거합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+캐비닛 또는 랙에서 SGF6112를 분리하여 상단 덮개에 액세스하거나 제품을 다른 위치로 옮기십시오.
+
+.시작하기 전에
+* SGF6112에 연결된 각 케이블을 식별하는 라벨이 있습니다.
+* 데이터 센터에서 유지 관리를 수행하는 SGF6112를 물리적으로 배치했습니다.
++
+link:locating-sgf6112-in-data-center.html["데이터 센터에서 SGF6112를 찾습니다"]
+
+* SGF6112를 종료했습니다.
++
+link:shut-down-sgf6112.html["SGF6112를 종료합니다"]
+
++
+
+CAUTION: 전원 스위치를 사용하여 제품을 끄지 마십시오.
+
+
+
+.단계
+. 제품 전원 케이블에 레이블을 부착한 다음 전원 케이블을 분리합니다.
+. ESD 밴드의 스트랩 끝을 손목 둘레에 감고 클립 끝을 금속 바닥에 단단히 고정하여 정전기 방전을 방지하십시오.
+. 어플라이언스 데이터 케이블과 SFP+ 또는 SFP28 트랜시버에 레이블을 지정한 다음 연결을 해제합니다.
++
+
+IMPORTANT: 성능 저하를 방지하려면 케이블을 비틀거나 접거나 끼거나 밟지 마십시오.
+
+. 제품 전면 패널에서 2개의 조임 나사를 풉니다.
++
+image::../media/sg6060_rack_retaining_screws.png[SGF6112 랙 고정 나사]
+
+. 장착 레일이 완전히 펼쳐지고 양쪽의 래치가 딸깍 소리가 날 때까지 SGF6112를 랙에서 앞쪽으로 밉니다.
++
+제품 상단 덮개를 사용할 수 있습니다.
+
+. 선택 사항: 캐비닛이나 랙에서 제품을 완전히 분리하는 경우 레일 키트의 지침에 따라 레일에서 제품을 분리하십시오.
+
+
+부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
+
+.관련 정보
+link:removing-sgf6112-cover.html["SGF6112 덮개를 제거합니다"]

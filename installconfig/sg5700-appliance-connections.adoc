@@ -1,0 +1,90 @@
+---
+permalink: installconfig/sg5700-appliance-connections.html 
+sidebar: sidebar 
+keywords: network connections, appliance, grid, admin, client, bmc, management 
+summary: SG5700 StorageGRID 어플라이언스를 설치할 때 두 컨트롤러를 서로 또는 필요한 네트워크에 연결합니다. 
+---
+= 네트워크 연결(SG5700)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG5700 StorageGRID 어플라이언스를 설치할 때 두 컨트롤러를 서로 또는 필요한 네트워크에 연결합니다.
+
+이 그림은 SG5760의 컨트롤러 2개와 E2800 컨트롤러가 상단에 있고 E5500SG 컨트롤러 아래쪽은 입니다. SG5712에서 E2800 컨트롤러는 E5500SG 컨트롤러의 왼쪽에 있습니다.
+
+image::../media/sg5760_connections.gif[SG5760 어플라이언스에 연결]
+
+[cols="1a,2a,2a,2a"]
+|===
+| 속성 표시기 | 포트 | 포트의 유형입니다 | 사용 
+
+
+ a| 
+1
+ a| 
+각 컨트롤러에 2개의 인터커넥트 포트
+ a| 
+16Gb/s FC 광 SFP+
+ a| 
+두 컨트롤러를 서로 연결합니다.
+
+
+
+ a| 
+2
+ a| 
+E2800 컨트롤러의 관리 포트 1
+ a| 
+1GbE(RJ-45)
+ a| 
+SANtricity 시스템 관리자에 액세스하는 네트워크에 연결합니다. StorageGRID용 관리 네트워크 또는 독립 관리 네트워크를 사용할 수 있습니다.
+
+
+
+ a| 
+E2800 컨트롤러의 관리 포트 2
+ a| 
+1GbE(RJ-45)
+ a| 
+기술 지원용으로 예약되어 있습니다.
+
+
+
+ a| 
+3
+ a| 
+E5500SG 컨트롤러의 관리 포트 1
+ a| 
+1GbE(RJ-45)
+ a| 
+StorageGRID용 관리 네트워크에 E5500SG 컨트롤러를 연결합니다.
+
+
+
+ a| 
+E5500SG 컨트롤러의 관리 포트 2
+ a| 
+1GbE(RJ-45)
+ a| 
+* 관리 네트워크에 대한 중복 연결을 원할 경우 관리 포트 1에 연결할 수 있습니다.
+* 유선을 해제하고 임시 로컬 액세스(IP 169.254.0.1)에 사용할 수 있습니다.
+* 설치하는 동안 DHCP 할당 IP 주소를 사용할 수 없는 경우 E700SG 컨트롤러를 서비스 랩톱에 연결하는 데 사용할 수 있습니다.
+
+
+
+
+ a| 
+4
+ a| 
+E5500SG 컨트롤러의 10/25-GbE 포트 1-4
+ a| 
+10GbE 또는 25GbE
+
+* 참고: * 어플라이언스에 포함된 SFP+ 트랜시버는 10GbE 링크 속도를 지원합니다. 네트워크 포트 4개에 25GbE 링크 속도를 사용하려면 SFP28 트랜시버를 제공해야 합니다.
+ a| 
+그리드 네트워크 및 StorageGRID용 클라이언트 네트워크에 연결합니다. 을 참조하십시오 link:port-bond-modes-for-e5700sg-controller-ports.html["포트 결합 모드(E5500SG 컨트롤러)"].
+
+|===

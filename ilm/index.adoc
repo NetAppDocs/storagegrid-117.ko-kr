@@ -1,0 +1,46 @@
+---
+permalink: ilm/index.html 
+sidebar: sidebar 
+keywords: information lifecycle management overview, about information lifecycle management, ilm overview, about ilm 
+summary: 'ILM(정보 수명 주기 관리) 규칙 및 정책을 구성하여 StorageGRID 시스템의 개체를 관리할 수 있습니다. ILM 규칙 및 정책은 StorageGRID이 개체 데이터의 복사본을 만들고 배포하는 방법과 시간이 지남에 따라 이러한 복사본을 관리하는 방법을 지시합니다.' 
+---
+= ILM을 사용하여 개체 관리: 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+하나 이상의 ILM 규칙으로 구성된 ILM(정보 수명 주기 관리) 정책을 구성하여 StorageGRID 시스템의 개체를 관리할 수 있습니다. ILM 규칙은 StorageGRID에 오브젝트 데이터의 복사본을 만들고 배포하는 방법과 시간이 지남에 따라 이러한 복사본을 관리하는 방법을 지시합니다.
+
+
+
+== 참조하십시오
+
+ILM 규칙 및 ILM 정책을 설계하고 구현하려면 신중한 계획이 필요합니다. 운영 요구사항, StorageGRID 시스템의 토폴로지, 오브젝트 보호 요구사항 및 사용 가능한 스토리지 유형을 이해해야 합니다. 그런 다음 여러 유형의 개체를 복사, 배포 및 저장할 방법을 결정해야 합니다.
+
+다음 지침을 따르십시오.
+
+* StorageGRID ILM에 대해 알아보십시오 link:how-ilm-operates-throughout-objects-life.html["ILM이 개체 수명 전반에 걸쳐 작동하는 방식"].
+* 구성 방법을 알아보십시오 link:what-storage-pool-is.html["지원합니다"], link:what-cloud-storage-pool-is.html["클라우드 스토리지 풀"], 및 link:what-ilm-rule-is.html["ILM 규칙"].
+* 자세한 내용을 알아보십시오 link:creating-proposed-ilm-policy.html["ILM 정책을 생성, 시뮬레이션 및 활성화합니다"] 이렇게 하면 하나 이상의 사이트에서 오브젝트 데이터를 보호할 수 있습니다.
+* 자세한 내용을 알아보십시오 link:managing-objects-with-s3-object-lock.html["S3 오브젝트 잠금으로 오브젝트 관리"]를 사용하면 특정 S3 버킷의 오브젝트를 지정된 시간 동안 삭제하거나 덮어쓰지 않도록 할 수 있습니다.
+
+
+
+
+== 자세한 정보
+
+자세한 내용은 다음 비디오를 참조하십시오.
+
+* https://["비디오: StorageGRID 11.7의 정보 수명 주기 관리 규칙"^].
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c]
+image::../media/video-screenshot-ilm-rules-117.png[비디오: StorageGRID 11.7의 정보 수명 주기 관리 규칙]
+
+* https://["비디오: StorageGRID 11.7의 정보 수명 주기 관리 정책"^]
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0009ebe1-3665-4cdc-a101-afbd009a0466]
+image::../media/video-screenshot-ilm-policies-117.png[비디오: StorageGRID 11.7의 정보 수명 주기 관리 정책]
+
+

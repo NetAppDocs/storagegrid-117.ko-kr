@@ -1,0 +1,51 @@
+---
+permalink: rhel/index.html 
+sidebar: sidebar 
+keywords: red hat enterprise linux, rhel, centos linux 
+summary: 'RHEL(Red Hat Enterprise Linux) 또는 CentOS Linux 환경에 StorageGRID 시스템을 설치하는 과정은 세 가지 기본 단계로 구성됩니다.' 
+---
+= Red Hat Enterprise Linux 또는 CentOS 설치: 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RHEL(Red Hat Enterprise Linux) 또는 CentOS Linux 환경에 StorageGRID 시스템을 설치하는 과정은 세 가지 기본 단계로 구성됩니다.
+
+. * 준비 *: 계획 및 준비 중에 다음 작업을 수행합니다.
++
+** StorageGRID의 하드웨어 및 스토리지 요구사항에 대해 알아보십시오.
+** 의 세부 사항에 대해 자세히 알아보십시오 link:../network/index.html["StorageGRID 네트워킹"] 따라서 네트워크를 적절하게 구성할 수 있습니다.
+** StorageGRID 그리드 노드를 호스팅하는 데 사용할 물리적 또는 가상 서버를 식별하고 준비합니다.
+** 준비한 서버:
++
+*** Linux를 설치합니다
+*** 호스트 네트워크를 구성합니다
+*** 호스트 스토리지를 구성합니다
+*** 컨테이너 엔진을 장착하십시오
+*** StorageGRID 호스트 서비스를 설치합니다
+
+
+
+
+. * 배포 *: 적절한 사용자 인터페이스를 사용하여 그리드 노드를 배포합니다. 그리드 노드를 구축하면 StorageGRID 시스템의 일부로 생성되고 하나 이상의 네트워크에 연결됩니다.
++
+.. Linux 명령줄 및 노드 구성 파일을 사용하여 1단계에서 준비한 호스트에 소프트웨어 기반 그리드 노드를 배포합니다.
+.. StorageGRID 어플라이언스 설치 프로그램을 사용하여 StorageGRID 어플라이언스 노드를 배포합니다.
++
+
+NOTE: StorageGRID 설치 절차에는 하드웨어 관련 설치 및 통합 지침이 포함되어 있지 않습니다. StorageGRID 어플라이언스를 설치하는 방법에 대한 자세한 내용은 를 참조하십시오 link:../installconfig/index.html["하드웨어 설치를 빠르게 시작합니다"] 를 참조하십시오.
+
+
+
+. * 구성 *: 모든 노드가 배포되면 그리드 관리자를 사용하여 그리드를 구성하고 설치를 완료합니다.
+
+
+이 지침은 StorageGRID 시스템을 배포하고 구성하는 표준 접근 방식을 권장합니다. 다음 대체 접근 방법에 대한 정보도 참조하십시오.
+
+* Ansible, Puppet 또는 Chef와 같은 표준 오케스트레이션 프레임워크를 사용하여 RHEL 또는 CentOS를 설치하고, 네트워킹 및 스토리지를 구성하고, 컨테이너 엔진 및 StorageGRID 호스트 서비스를 설치하고, 가상 그리드 노드를 배포합니다.
+* 설치 아카이브에 제공되는 Python 구성 스크립트를 사용하여 StorageGRID 시스템의 구축 및 구성을 자동화합니다.
+* Python 구성 스크립트(설치 아카이브나 StorageGRID 어플라이언스 설치 프로그램에서 사용 가능)를 사용하여 어플라이언스 그리드 노드의 구축 및 구성을 자동화합니다.
+* StorageGRID 배포의 고급 개발자인 경우 설치 REST API를 사용하여 StorageGRID 그리드 노드 설치를 자동화합니다.
+

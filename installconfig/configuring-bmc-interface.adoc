@@ -1,0 +1,26 @@
+---
+permalink: installconfig/configuring-bmc-interface.html 
+sidebar: sidebar 
+keywords: BMC, baseboard management controller, configure, setup, set up 
+summary: 'SGF6112, SG6000 또는 서비스 어플라이언스의 베이스보드 관리 컨트롤러\(BMC\)에 대한 사용자 인터페이스는 하드웨어에 대한 상태 정보를 제공하며 어플라이언스에 대한 SNMP 설정 및 기타 옵션을 구성할 수 있습니다.' 
+---
+= BMC 인터페이스: 개요(SGF6112, SG6000, SG100 및 SG1000)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SGF6112, SG6000 또는 서비스 어플라이언스의 베이스보드 관리 컨트롤러(BMC)에 대한 사용자 인터페이스는 하드웨어에 대한 상태 정보를 제공하며 SNMP 설정 및 어플라이언스에 대한 기타 옵션을 구성할 수 있습니다.
+
+어플라이언스를 설치할 때 BMC를 구성하려면 이 섹션의 다음 절차를 따르십시오.
+
+* BMC 인터페이스의 루트 암호를 변경합니다
+* BMC 관리 포트의 IP 주소를 설정합니다
+* BMC 인터페이스에 액세스합니다
+* SNMP 설정을 구성합니다
+* 이메일 알림 및 알림을 설정합니다
+
+
+
+NOTE: 어플라이언스가 그리드에 이미 설치되어 있고 StorageGRID 소프트웨어를 실행 중인 경우 다음 절차에 따라 BMC 구성에 대한 대체 메커니즘을 참조하십시오.

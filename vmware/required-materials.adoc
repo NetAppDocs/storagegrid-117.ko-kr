@@ -1,0 +1,63 @@
+---
+permalink: vmware/required-materials.html 
+sidebar: sidebar 
+keywords: installation materials vmware 
+summary: StorageGRID를 설치하기 전에 필요한 자료를 수집하고 준비해야 합니다. 
+---
+= 필수 자료
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID를 설치하기 전에 필요한 자료를 수집하고 준비해야 합니다.
+
+[cols="1a,2a"]
+|===
+| 항목 | 참고 
+
+
+ a| 
+NetApp StorageGRID 라이센스
+ a| 
+디지털 서명된 유효한 NetApp 라이센스가 있어야 합니다.
+
+* 참고 *: StorageGRID 설치 아카이브에는 제품에 대한 지원 권한이 없는 무료 라이센스가 포함되어 있습니다.
+
+
+
+ a| 
+StorageGRID 설치 아카이브
+ a| 
+반드시 해야 합니다 link:downloading-and-extracting-storagegrid-installation-files.html["StorageGRID 설치 아카이브를 다운로드하고 파일의 압축을 풉니다"].
+
+
+
+ a| 
+VMware 소프트웨어 및 설명서
+ a| 
+설치 중에 VMware vSphere Web Client를 사용하여 가상 머신에 가상 그리드 노드를 구축합니다. 지원되는 버전은 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
+
+
+
+ a| 
+서비스 노트북
+ a| 
+StorageGRID 시스템은 서비스 포어를 통해 설치됩니다.서비스 랩톱에는 다음이 있어야 합니다.
+
+* 네트워크 포트
+* SSH 클라이언트(예: PuTTY)
+* link:../admin/web-browser-requirements.html["지원되는 웹 브라우저"]
+
+
+
+
+ a| 
+StorageGRID 설명서
+ a| 
+* link:../release-notes/index.html["릴리스 정보"]
+* link:../admin/index.html["StorageGRID 관리 지침"]
+
+
+|===

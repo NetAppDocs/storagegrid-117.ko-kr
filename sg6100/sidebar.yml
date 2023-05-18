@@ -1,0 +1,41 @@
+---
+section: sg6100
+title: SGF6112 하드웨어를 유지보수하십시오
+entries:
+- title: 개요
+  pdf-filename: sg6100 하드웨어 유지 관리
+  url: "/sg6100/index.html"
+- title: 구성 유지보수 절차
+  pdf-filename: 구성 유지보수 절차 - SGF6112
+  entries:
+  - title: 제품 LED를 켜고 끕니다
+    url: "/sg6100/turning-sgf6112-identify-led-on-and-off.html"
+  - title: 데이터 센터에서 어플라이언스를 찾습니다
+    url: "/sg6100/locating-sgf6112-in-data-center.html"
+  - title: 제품을 종료하십시오
+    url: "/sg6100/shut-down-sgf6112.html"
+  - title: SGF6112의 전원을 켜고 작동을 확인합니다
+    url: "/sg6100/powering-on-sgf6112-and-verifying-operation.html"
+  - title: 링크 구성을 변경합니다
+    url: "/sg6100/changing-link-configuration-of-sgf6112-appliance.html"
+- title: 하드웨어 유지보수 절차
+  pdf-filename: 하드웨어 유지보수 절차 - SGF6112
+  entries:
+  - title: 교체할 구성 요소를 확인합니다
+    url: "/sg6100/verify-component-to-replace.html"
+  - title: 하나 이상의 전원 공급 장치를 교체합니다
+    url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
+  - title: 팬을 교체합니다
+    url: "/sg6100/replacing-fan-in-sgf6112.html"
+  - title: 드라이브를 교체합니다
+    url: "/sg6100/replacing-drive-in-sgf6112.html"
+  - title: NIC를 교체합니다
+    url: "/sg6100/replace-nic-in-sgf6112.html"
+  - title: CMOS 배터리를 교체합니다
+    url: "/sg6100/replace-cmos-in-sgf6112.html"
+  - title: SGF6112 어플라이언스를 교체하십시오
+    url: "/sg6100/replacing-sgf6112-appliance.html"
+  - title: 랙에 SGF6112를 재배치합니다
+    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
+  - title: 덮개를 다시 끼웁니다
+    url: "/sg6100/reinstalling-sgf6112-cover.html"

@@ -1,0 +1,994 @@
+---
+permalink: s3/quick-reference-support-for-aws-apis.html 
+sidebar: sidebar 
+keywords: Amazon s3, API, request headers, s3 support, request syntax, supported, aws s3 
+summary: '이 페이지에서는 StorageGRID에서 Amazon S3(Simple Storage Service) API를 지원하는 방법을 요약합니다.' 
+---
+= 빠른 참조: 지원되는 S3 API 요청
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 페이지에서는 StorageGRID에서 Amazon S3(Simple Storage Service) API를 지원하는 방법을 요약합니다.
+
+이 페이지에는 StorageGRID에서 지원하는 S3 작업만 포함됩니다.
+
+
+NOTE: 각 작업에 대한 AWS 설명서를 보려면 제목에서 링크를 선택합니다.
+
+
+
+== 공통 URI 쿼리 매개 변수 및 요청 헤더
+
+별도로 지정하지 않으면 다음과 같은 공통 URI 쿼리 매개 변수가 지원됩니다.
+
+* `versionId` (오브젝트 작업에 필요한 경우)
+
+
+별도로 명시되지 않은 경우 다음과 같은 일반적인 요청 헤더가 지원됩니다.
+
+* `Authorization`
+* `Connection`
+* `Content-Length`
+* `Content-MD5`
+* `Content-Type`
+* `Date`
+* `Expect`
+* `Host`
+* `x-amz-date`
+
+
+.관련 정보
+* link:../s3/s3-rest-api-supported-operations-and-limitations.html["S3 REST API 구현 세부 정보"]
+* https://["Amazon Simple Storage Service API 참조: 일반 요청 헤더"^]
+
+
+
+
+== https://["AbortMultipartUpload 를 클릭합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
+
+* `uploadId`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-for-multipart-uploads.html["멀티파트 업로드 작업"]
+
+
+
+== https://["CompleteMultipartUpload를 클릭합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
+
+* `uploadId`
+
+
+.본문 XML 태그를 요청합니다
+StorageGRID는 다음과 같은 요청 본문 XML 태그를 지원합니다.
+
+* `CompleteMultipartUpload`
+* `Part`
+* `ETag`
+* `PartNumber`
+
+
+.StorageGRID 설명서
+link:complete-multipart-upload.html["멀티파트 업로드를 완료합니다"]
+
+
+
+== https://["CopyObject 를 선택합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
+
+* `x-amz-copy-source`
+* `x-amz-copy-source-if-match`
+* `x-amz-copy-source-if-modified-since`
+* `x-amz-copy-source-if-none-match`
+* `x-amz-copy-source-if-unmodified-since`
+* `x-amz-copy-source-server-side-encryption-customer-algorithm`
+* `x-amz-copy-source-server-side-encryption-customer-key`
+* `x-amz-copy-source-server-side-encryption-customer-key-MD5`
+* `x-amz-metadata-directive`
+* `x-amz-object-lock-legal-hold`
+* `x-amz-object-lock-mode`
+* `x-amz-object-lock-retain-until-date`
+* `x-amz-server-side-encryption`
+* `x-amz-server-side-encryption-customer-algorithm`
+* `x-amz-server-side-encryption-customer-key`
+* `x-amz-server-side-encryption-customer-key-MD5`
+* `x-amz-storage-class`
+* `x-amz-tagging`
+* `x-amz-tagging-directive`
+* `x-amz-meta-<metadata-name>`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:put-object-copy.html["개체 - 복사 를 선택합니다"]
+
+
+
+== https://["CreateBucket"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
+
+* `x-amz-bucket-object-lock-enabled`
+
+
+.요청 본문
+StorageGRID는 구현 시 Amazon S3 REST API에 의해 정의된 모든 요청 본문 매개 변수를 지원합니다.
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["CreateMultptUpload 를 클릭합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
+
+* `Cache-Control`
+* `Content-Disposition`
+* `Content-Encoding`
+* `Content-Language`
+* `Expires`
+* `x-amz-server-side-encryption`
+* `x-amz-storage-class`
+* `x-amz-server-side-encryption-customer-algorithm`
+* `x-amz-server-side-encryption-customer-key`
+* `x-amz-server-side-encryption-customer-key-MD5`
+* `x-amz-tagging`
+* `x-amz-object-lock-mode`
+* `x-amz-object-lock-retain-until-date`
+* `x-amz-object-lock-legal-hold`
+* `x-amz-meta-<metadata-name>`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:initiate-multipart-upload.html["멀티파트 업로드를 시작합니다"]
+
+
+
+== https://["삭제 버킷"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["DeleteBucketCors"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["DeleteBucketEncryption"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["DeleteBucketLifecycle"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+* link:operations-on-buckets.html["버킷 작업"]
+* link:create-s3-lifecycle-configuration.html["S3 라이프사이클 구성을 생성합니다"]
+
+
+
+
+== https://["DeleteBuckketPolicy를 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["DeleteBuckReplication 을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["삭제 BucketTagging"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["DeleteObject 를 클릭합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 요청 헤더가 추가되었습니다.
+
+* `x-amz-bypass-governance-retention`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-objects.html["객체에 대한 작업"]
+
+
+
+== https://["DeleteObjects 를 클릭합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 요청 헤더가 추가되었습니다.
+
+* `x-amz-bypass-governance-retention`
+
+
+.요청 본문
+StorageGRID는 구현 시 Amazon S3 REST API에 의해 정의된 모든 요청 본문 매개 변수를 지원합니다.
+
+.StorageGRID 설명서
+link:operations-on-objects.html["객체에 대한 작업"] (여러 개체 삭제)
+
+
+
+== https://["DeleteObjectTagging 을 선택합니다"^]
+
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-objects.html["객체에 대한 작업"]
+
+
+
+== https://["GetBuckketAcl"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["GetBuckketCors 를 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["GetBuckketEncryption을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["GetBuckLifecycleConfiguration 을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+* link:operations-on-buckets.html["버킷 작업"] (버킷 수명 주기 가져오기)
+* link:create-s3-lifecycle-configuration.html["S3 라이프사이클 구성을 생성합니다"]
+
+
+
+
+== https://["GetBucketLocation 을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["GetBuckNotificationConfiguration 을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"] (버킷 통지 가져오기)
+
+
+
+== https://["GetBuckketPolicy를 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["GetBucketReplication 을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["GetBucketTagging"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["GetBuckketVersioning 을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["GetObject 를 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
+
+* `partNumber`
+* `response-cache-control`
+* `response-content-disposition`
+* `response-content-encoding`
+* `response-content-language`
+* `response-content-type`
+* `response-expires`
+
+
+그리고 이러한 추가 요청 헤더는 다음과 같습니다.
+
+* `Range`
+* `x-amz-server-side-encryption-customer-algorithm`
+* `x-amz-server-side-encryption-customer-key`
+* `x-amz-server-side-encryption-customer-key-MD5`
+* `If-Match`
+* `If-Modified-Since`
+* `If-None-Match`
+* `If-Unmodified-Since`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:get-object.html["객체 가져오기"]
+
+
+
+== https://["GetObjectAcl"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-objects.html["객체에 대한 작업"]
+
+
+
+== https://["GetObjectLegalHold 를 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브젝트 잠금을 구성합니다"]
+
+
+
+== https://["GetObjectLockConfiguration 을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브젝트 잠금을 구성합니다"]
+
+
+
+== https://["GetObjectRetention을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브젝트 잠금을 구성합니다"]
+
+
+
+== https://["GetObjectTagging"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-objects.html["객체에 대한 작업"]
+
+
+
+== https://["머리버킷"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["HeadObject 를 선택합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
+
+* `x-amz-server-side-encryption-customer-algorithm`
+* `x-amz-server-side-encryption-customer-key`
+* `x-amz-server-side-encryption-customer-key-MD5`
+* `If-Match`
+* `If-Modified-Since`
+* `If-None-Match`
+* `If-Unmodified-Since`
+* `Range`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:head-object.html["헤드 개체"]
+
+
+
+== https://["ListBucket"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-the-service.html["서비스 및 GT에 대한 작업;서비스 가져오기"]
+
+
+
+== https://["ListMultipartUploads 를 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
+
+* `delimiter`
+* `encoding-type`
+* `key-marker`
+* `max-uploads`
+* `prefix`
+* `upload-id-marker`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:list-multipart-uploads.html["다중 파트 업로드 나열"]
+
+
+
+== https://["ListObjects 를 선택합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
+
+* `delimiter`
+* `encoding-type`
+* `marker`
+* `max-keys`
+* `prefix`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"] (버킷 가져오기)
+
+
+
+== https://["ListObjectsV2"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
+
+* `continuation-token`
+* `delimiter`
+* `encoding-type`
+* `fetch-owner`
+* `max-keys`
+* `prefix`
+* `start-after`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"] (버킷 가져오기)
+
+
+
+== https://["ListObjectVersions 를 선택합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
+
+* `delimiter`
+* `encoding-type`
+* `key-marker`
+* `max-keys`
+* `prefix`
+* `version-id-marker`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"] (버킷 객체 버전 가져오기)
+
+
+
+== https://["목록 파트"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
+
+* `max-parts`
+* `part-number-marker`
+* `uploadId`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:list-multipart-uploads.html["다중 파트 업로드 나열"]
+
+
+
+== https://["BuckketCors의"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+StorageGRID는 구현 시 Amazon S3 REST API에 의해 정의된 모든 요청 본문 매개 변수를 지원합니다.
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["PutBucketEncryption을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.본문 XML 태그를 요청합니다
+StorageGRID는 다음과 같은 요청 본문 XML 태그를 지원합니다.
+
+* `ServerSideEncryptionConfiguration`
+* `Rule`
+* `ApplyServerSideEncryptionByDefault`
+* `SSEAlgorithm`
+
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["PutBucketLifecycleConfiguration을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.본문 XML 태그를 요청합니다
+StorageGRID는 다음과 같은 요청 본문 XML 태그를 지원합니다.
+
+* `NewerNoncurrentVersions`
+* `LifecycleConfiguration`
+* `Rule`
+* `Expiration`
+* `Days`
+* `Filter`
+* `And`
+* `Prefix`
+* `Tag`
+* `Key`
+* `Value`
+* `Prefix`
+* `Tag`
+* `Key`
+* `Value`
+* `ID`
+* `NoncurrentVersionExpiration`
+* `NoncurrentDays`
+* `Prefix`
+* `Status`
+
+
+.StorageGRID 설명서
+* link:operations-on-buckets.html["버킷 작업"] (Put Bucket 수명주기)
+* link:create-s3-lifecycle-configuration.html["S3 라이프사이클 구성을 생성합니다"]
+
+
+
+
+== https://["PutBucketNotificationConfiguration을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.본문 XML 태그를 요청합니다
+StorageGRID는 다음과 같은 요청 본문 XML 태그를 지원합니다.
+
+* `Prefix`
+* `Suffix`
+* `NotificationConfiguration`
+* `TopicConfiguration`
+* `Event`
+* `Filter`
+* `S3Key`
+* `FilterRule`
+* `Name`
+* `Value`
+* `Id`
+* `Topic`
+
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"] (버킷 통지)
+
+
+
+== https://["BucketPolicy를 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+지원되는 JSON 본문 필드에 대한 자세한 내용은 을 참조하십시오link:bucket-and-group-access-policies.html["버킷 및 그룹 액세스 정책을 사용합니다"].
+
+
+
+== https://["PutBucketReplication을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.본문 XML 태그를 요청합니다
+* `ReplicationConfiguration`
+* `Status`
+* `Prefix`
+* `Destination`
+* `Bucket`
+* `StorageClass`
+* `Rule`
+
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["BucketTagging"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+StorageGRID는 구현 시 Amazon S3 REST API에 의해 정의된 모든 요청 본문 매개 변수를 지원합니다.
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["PutBucketVersioning을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.바디 매개 변수를 요청합니다
+StorageGRID는 다음과 같은 요청 본문 매개 변수를 지원합니다.
+
+* `VersioningConfiguration`
+* `Status`
+
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://["PutObject 를 선택합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
+
+* `Cache-Control`
+* `Content-Disposition`
+* `Content-Encoding`
+* `Content-Language`
+* `x-amz-server-side-encryption`
+* `x-amz-storage-class`
+* `x-amz-server-side-encryption-customer-algorithm`
+* `x-amz-server-side-encryption-customer-key`
+* `x-amz-server-side-encryption-customer-key-MD5`
+* `x-amz-tagging`
+* `x-amz-object-lock-mode`
+* `x-amz-object-lock-retain-until-date`
+* `x-amz-object-lock-legal-hold`
+* `x-amz-meta-<metadata-name>`
+
+
+.요청 본문
+* 개체의 이진 데이터입니다
+
+
+.StorageGRID 설명서
+link:put-object.html["개체 를 넣습니다"]
+
+
+
+== https://["PutObjectLegalHold를 선택합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+StorageGRID는 구현 시 Amazon S3 REST API에 의해 정의된 모든 요청 본문 매개 변수를 지원합니다.
+
+.StorageGRID 설명서
+link:use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브젝트 잠금을 구성합니다"]
+
+
+
+== https://["PutObjectLockConfiguration 을 참조하십시오"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+StorageGRID는 구현 시 Amazon S3 REST API에 의해 정의된 모든 요청 본문 매개 변수를 지원합니다.
+
+.StorageGRID 설명서
+link:use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브젝트 잠금을 구성합니다"]
+
+
+
+== https://["PutObjectRetention"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음 추가 헤더가 추가되었습니다.
+
+* `x-amz-bypass-governance-retention`
+
+
+.요청 본문
+StorageGRID는 구현 시 Amazon S3 REST API에 의해 정의된 모든 요청 본문 매개 변수를 지원합니다.
+
+.StorageGRID 설명서
+link:use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브젝트 잠금을 구성합니다"]
+
+
+
+== https://["PutObjectTagging"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+StorageGRID는 구현 시 Amazon S3 REST API에 의해 정의된 모든 요청 본문 매개 변수를 지원합니다.
+
+.StorageGRID 설명서
+link:operations-on-objects.html["객체에 대한 작업"]
+
+
+
+== https://["SelectObjectContent 를 선택합니다"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+지원되는 본문 필드에 대한 자세한 내용은 다음을 참조하십시오.
+
+* link:use-s3-select.html["S3 Select를 사용합니다"]
+* link:select-object-content.html["개체 내용 을 선택합니다"]
+
+
+
+
+== https://["업로드 파트"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
+
+* `partNumber`
+* `uploadId`
+
+
+그리고 이러한 추가 요청 헤더는 다음과 같습니다.
+
+* `x-amz-server-side-encryption-customer-algorithm`
+* `x-amz-server-side-encryption-customer-key`
+* `x-amz-server-side-encryption-customer-key-MD5`
+
+
+.요청 본문
+* 파트의 이진 데이터
+
+
+.StorageGRID 설명서
+link:upload-part.html["부품 업로드"]
+
+
+
+== https://["업로드파트 복사"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
+
+* `partNumber`
+* `uploadId`
+
+
+그리고 이러한 추가 요청 헤더는 다음과 같습니다.
+
+* `x-amz-copy-source`
+* `x-amz-copy-source-if-match`
+* `x-amz-copy-source-if-modified-since`
+* `x-amz-copy-source-if-none-match`
+* `x-amz-copy-source-if-unmodified-since`
+* `x-amz-copy-source-range`
+* `x-amz-server-side-encryption-customer-algorithm`
+* `x-amz-server-side-encryption-customer-key`
+* `x-amz-server-side-encryption-customer-key-MD5`
+* `x-amz-copy-source-server-side-encryption-customer-algorithm`
+* `x-amz-copy-source-server-side-encryption-customer-key`
+* `x-amz-copy-source-server-side-encryption-customer-key-MD5`
+
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:upload-part-copy.html["업로드 부품 - 복사"]

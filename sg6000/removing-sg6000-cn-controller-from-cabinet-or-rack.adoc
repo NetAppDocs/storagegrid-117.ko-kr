@@ -1,0 +1,54 @@
+---
+permalink: sg6000/removing-sg6000-cn-controller-from-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, remove, removing, removal, cabinet, rack, controller, sg6000-cn 
+summary: 캐비닛 또는 랙에서 SG6000-CN 컨트롤러를 분리하여 상단 덮개에 액세스하거나 컨트롤러를 다른 위치로 이동합니다. 
+---
+= 캐비닛 또는 랙에서 SG6000-CN 컨트롤러를 제거합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+캐비닛 또는 랙에서 SG6000-CN 컨트롤러를 분리하여 상단 덮개에 액세스하거나 컨트롤러를 다른 위치로 이동합니다.
+
+.시작하기 전에
+* SG6000-CN 컨트롤러에 연결된 각 케이블을 식별하는 라벨이 있습니다.
+* 데이터 센터에서 유지 관리를 수행하는 SG6000-CN 컨트롤러를 물리적으로 배치했습니다.
++
+link:locating-controller-in-data-center.html["데이터 센터에서 컨트롤러를 찾습니다"]
+
+* SG6000-CN 컨트롤러를 종료했습니다.
++
+link:shutting-down-sg6000-cn-controller.html["SG6000-CN 컨트롤러를 종료합니다"]
+
++
+
+CAUTION: 전원 스위치를 사용하여 컨트롤러를 끄지 마십시오.
+
+
+
+.단계
+. 컨트롤러 전원 케이블에 레이블을 지정한 다음 케이블을 분리합니다.
+. ESD 밴드의 스트랩 끝을 손목 둘레에 감고 클립 끝을 금속 바닥에 단단히 고정하여 정전기 방전을 방지하십시오.
+. 컨트롤러 데이터 케이블과 SFP+ 또는 SFP28 트랜시버에 레이블을 지정한 다음 연결을 끊으십시오.
++
+
+IMPORTANT: 성능 저하를 방지하려면 케이블을 비틀거나 접거나 끼거나 밟지 마십시오.
+
+. 컨트롤러 전면 패널에서 2개의 조임 나사를 풉니다.
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060 랙 고정 나사]
+
+. 장착 레일이 완전히 확장되고 양쪽의 래치가 딸깍하는 소리가 날 때까지 SG6000-CN 컨트롤러를 랙에서 앞쪽으로 밉니다.
++
+컨트롤러 상단 덮개에 액세스할 수 있습니다.
+
+. 옵션: 캐비닛이나 랙에서 컨트롤러를 완전히 분리하는 경우 레일 키트의 지침에 따라 레일에서 컨트롤러를 분리합니다.
+
+
+부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
+
+.관련 정보
+link:removing-sg6000-cn-controller-cover.html["SG6000-CN 컨트롤러 덮개를 분리합니다"]

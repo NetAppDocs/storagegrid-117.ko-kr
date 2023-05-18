@@ -1,0 +1,80 @@
+---
+permalink: installconfig/hardware-setup-appears-to-hang.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, troubleshoot, troubleshooting, hardware, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck 
+summary: 하드웨어 장애 또는 케이블 연결 오류로 인해 스토리지 컨트롤러 또는 어플라이언스 컨트롤러가 부팅 처리를 완료하지 못하는 경우 StorageGRID 어플라이언스 설치 프로그램을 사용할 수 없습니다. 
+---
+= 하드웨어 설정이 멈춤(SG6000 또는 SG5700)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+하드웨어 장애 또는 케이블 연결 오류로 인해 스토리지 컨트롤러 또는 어플라이언스 컨트롤러가 부팅 처리를 완료하지 못하는 경우 StorageGRID 어플라이언스 설치 프로그램을 사용할 수 없습니다.
+
+.단계
+[role="tabbed-block"]
+====
+.SG6000
+--
+. 스토리지 컨트롤러의 경우 7세그먼트 디스플레이에서 코드를 확인합니다.
++
+전원을 켜는 동안 하드웨어가 초기화되는 동안 2개의 7세그먼트 디스플레이에는 일련의 코드가 표시됩니다. 하드웨어가 성공적으로 부팅되면 두 7개 세그먼트 디스플레이가 모두 표시됩니다 `99`.
+
+. SG6000-CN 컨트롤러의 LED와 BMC에 표시되는 부팅 및 오류 코드를 검토합니다.
+. 문제 해결에 도움이 필요한 경우 기술 지원 부서에 문의하십시오.
+
+
+--
+.SG5700
+--
+. 7세그먼트 디스플레이에서 코드를 확인합니다.
++
+전원을 켜는 동안 하드웨어가 초기화되는 동안 2개의 7세그먼트 디스플레이에는 일련의 코드가 표시됩니다. 하드웨어가 성공적으로 부팅되면 7개의 세그먼트에서 각 컨트롤러에 대해 서로 다른 코드를 표시합니다.
+
+. E700SG 컨트롤러에 대한 7세그먼트 디스플레이의 코드를 검토합니다.
++
+
+NOTE: 설치 및 프로비저닝에 시간이 걸립니다. 일부 설치 단계에서는 몇 분 동안 StorageGRID 어플라이언스 설치 프로그램에 업데이트를 보고하지 않습니다.
+
++
+오류가 발생하면 7개 세그먼트 디스플레이에서 그와 같은 시퀀스가 깜박입니다.
+
+. 이러한 코드의 의미를 이해하려면 다음 리소스를 참조하십시오.
++
+[cols="1a,2a"]
+|===
+| 컨트롤러 | 참조하십시오 
+
+
+ a| 
+E5500SG 컨트롤러
+ a| 
+** "E5700SG 컨트롤러의 상태 표시기"
+** ""SANtricity OS 소프트웨어와 동기화 중 오류 발생""
+
+
+
+
+ a| 
+E2800 컨트롤러
+ a| 
+_E5700 및 E2800 시스템 모니터링 가이드 _
+
+* 참고: * E-Series E5700 컨트롤러에 관해 설명된 코드는 어플라이언스의 E5500SG 컨트롤러에 적용되지 않습니다.
+
+|===
+. 그래도 문제가 해결되지 않으면 기술 지원 부서에 문의하십시오.
+
+
+--
+====
+.관련 정보
+* link:viewing-status-indicators.html["상태 표시기를 봅니다"]
+* http://["NetApp E-Series 시스템 문서 사이트"^]
+* link:he-error-error-synchronizing-with-santricity-os-software.html["SANtricity OS 소프트웨어와 동기화하는 동안 오류가 발생했습니다"]
+* https://["E5700 및 E2800 시스템 모니터링 가이드"^]
+* link:viewing-boot-up-codes-for-sg6000-cn-controller.html["부팅 코드 보기(SG6000-CN 컨트롤러)"]
+* link:viewing-error-codes-for-sg6000-cn-controller.html["오류 코드 보기(SG6000-CN 컨트롤러)"]
+

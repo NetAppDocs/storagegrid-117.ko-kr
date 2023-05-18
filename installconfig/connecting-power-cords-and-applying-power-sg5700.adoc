@@ -1,0 +1,33 @@
+---
+permalink: installconfig/connecting-power-cords-and-applying-power-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, wire, wiring, cabling, cable, Connecting, connect, power cords, power, applying power, apply power, turn on, power up, ac, ac power 
+summary: 어플라이언스에 전원을 공급하면 두 컨트롤러가 모두 부팅됩니다. 
+---
+= 전원 코드 연결 및 전원 공급(SG5700)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+어플라이언스에 전원을 공급하면 두 컨트롤러가 모두 부팅됩니다.
+
+.시작하기 전에
+전원을 연결하기 전에 두 제품의 전원 스위치를 모두 꺼야 합니다.
+
+
+CAUTION: * 감전 위험 * -- 전원 코드를 연결하기 전에 제품의 두 전원 스위치가 꺼져 있는지 확인하십시오.
+
+.단계
+. 제품의 전원 스위치 2개가 꺼져 있는지 확인하십시오.
+. 전원 코드 2개를 제품에 연결합니다.
+. 2개의 전원 코드를 캐비닛이나 랙의 서로 다른 PDU(Power Distribution Unit)에 연결합니다.
+. 제품의 전원 스위치 2개를 켜십시오.
++
+** 전원을 켜는 동안 전원 스위치를 끄지 마십시오.
+** 팬이 처음 시작될 때 매우 시끄럽습니다. 시동 중 큰 소음이 정상입니다.
+
+
+. 컨트롤러가 부팅된 후 7개의 세그먼트 디스플레이를 확인합니다.
+

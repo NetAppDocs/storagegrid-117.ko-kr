@@ -1,0 +1,95 @@
+---
+permalink: upgrade/removed-or-deprecated-features.html 
+sidebar: sidebar 
+keywords: features, removed, deprecated 
+summary: 일부 기능은 이 릴리즈에서 제거되었거나 더 이상 사용되지 않습니다. 업그레이드 전에 클라이언트 응용 프로그램을 업데이트하거나 구성을 수정해야 하는지 여부를 이해하려면 이 항목을 검토하십시오. 
+---
+= 제거되거나 사용되지 않는 기능
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+일부 기능은 이 릴리즈에서 제거되었거나 더 이상 사용되지 않습니다. 업그레이드 전에 클라이언트 응용 프로그램을 업데이트하거나 구성을 수정해야 하는지 여부를 이해하려면 이 항목을 검토하십시오.
+
+
+
+== 연결 로드 밸런서(CLB) 서비스가 제거되었습니다
+
+게이트웨이 노드의 CLB(연결 로드 밸런서) 서비스는 StorageGRID 11.4에서 더 이상 사용되지 않으며 이제 소프트웨어에서 완전히 제거되었습니다. 클라이언트 응용 프로그램에서 스토리지 노드로 들어오는 네트워크 연결을 배포하려면 모든 관리 노드 및 게이트웨이 노드에 포함된 로드 밸런서 서비스에 대한 로드 밸런서 끝점을 구성하거나 타사 로드 밸런서를 통합할 수 있습니다. 을 참조하십시오 link:../admin/managing-load-balancing.html["로드 균형 조정에 대한 고려 사항"].
+
+기존 StorageGRID 버전에서 S3 또는 Swift API에 대해 사용자 지정 인증서가 설정된 경우 StorageGRID 11.7로 업그레이드하는 동안 CLB 포트 8082, 8083, 8084 및 8085가 자동으로 로드 엔드포인트 밸런서로 변환됩니다.
+
+
+
+== SG5600 어플라이언스는 지원이 종료되었습니다
+
+SG5600 어플라이언스는 지원이 끝났습니다. 하드웨어 업데이트 옵션은 NetApp 세일즈 담당자에게 문의하십시오.
+
+SG5600 하드웨어에 유지보수 절차를 수행해야 하는 경우 를 사용하십시오 https://["StorageGRID 11.6 지침"^].
+
+
+
+== Swift 지원은 사용되지 않습니다
+
+StorageGRID 11.7 릴리스 현재 Swift 클라이언트 응용 프로그램에 대한 지원은 더 이상 지원되지 않습니다. Swift 클라이언트 애플리케이션을 지원하는 사용자 인터페이스 및 API는 향후 릴리즈에서 제거될 예정입니다.
+
+
+
+== 아카이브 노드 지원은 더 이상 사용되지 않습니다
+
+아카이브 노드 지원(S3 API를 사용하여 클라우드로 아카이빙하고 TSM 미들웨어를 사용하여 테이프에 아카이빙하는 경우 모두 지원)은 더 이상 사용되지 않으며 향후 릴리즈에서 제거될 예정입니다. 아카이브 노드에서 외부 아카이브 스토리지 시스템으로 오브젝트를 이동한 후 ILM 클라우드 스토리지 풀로 대체되었으며 이는 더 많은 기능을 제공합니다.
+
+참조:
+
+* link:../admin/migrating-objects-from-cloud-tiering-s3-to-cloud-storage-pool.html["객체를 클라우드 스토리지 풀로 마이그레이션합니다"]
+* link:../ilm/what-cloud-storage-pool-is.html["클라우드 스토리지 풀 사용"]
+
+
+또한 StorageGRID 11.7 이하의 활성 ILM 정책에서 아카이브 노드를 제거해야 합니다. 아카이브 노드에 저장된 오브젝트 데이터를 제거하면 향후 업그레이드가 간소화됩니다. 을 참조하십시오 link:../ilm/working-with-ilm-rules-and-ilm-policies.html["ILM 규칙 및 ILM 정책 작업"].
+
+
+
+== CIFS/Samba를 통한 감사 내보내기가 제거되었습니다
+
+CIFS/Samba를 통한 감사 내보내기는 StorageGRID Webscale 11.1에서 더 이상 사용되지 않으며 이제 제거되었습니다. 필요에 따라 할 수 있습니다 link:../monitor/considerations-for-external-syslog-server.html["외부 syslog 서버를 사용합니다"] 또는 link:../admin/configuring-audit-client-access.html["NFS에 대한 감사 클라이언트 액세스를 구성합니다"].
+
+
+
+== 스토리지 풀을 임시 제거된 위치로 지정하는 옵션입니다
+
+이전 버전에서는 단일 스토리지 풀이 포함된 개체 배치로 ILM 규칙을 만들었으면 임시 위치로 사용할 두 번째 스토리지 풀을 지정하라는 메시지가 표시되었습니다. StorageGRID 11.7부터 이 옵션이 제거되었습니다.
+
+
+
+== 그리드 관리자 옵션이 이동 또는 제거되었습니다
+
+여러 그리드 관리자 옵션이 이동되거나 제거되었습니다.
+
+* 를 클릭합니다 link:../admin/configuring-stored-object-compression.html["저장된 객체를 압축합니다"] 옵션이 * 구성 * > * 시스템 * > * 개체 압축 * 으로 이동했습니다.
+* 네트워크 전송 암호화 * 내부 연결 설정이 제거되고 으로 대체되었습니다 link:../admin/manage-tls-ssh-policy.html["TLS 및 SSH 정책"] 새 * 구성 * > * 보안 * > * 보안 설정 * 페이지의 탭입니다.
++
+
+NOTE: AES256-SHA 옵션은 StorageGRID 11.6의 기본값이며 StorageGRID 11.7에서 사용할 수 있는 유일한 설정입니다. AES128-SHA 값은 Grid Management API에서 무시됩니다. StorageGRID 11.7 업그레이드 중에 네트워크 전송 암호화 알고리즘은 AES256-SHA로 설정됩니다.
+
+* 저장된 객체 암호화 *, * 클라이언트 수정 방지 * 및 * 스토리지 노드 연결에 HTTP 사용 * 옵션이 로 이동했습니다 link:../admin/changing-network-options-object-encryption.html["Network and objects(네트워크 및 개체) 탭"] 새 * 구성 * > * 보안 * > * 보안 설정 * 페이지에서
+* 를 클릭합니다 link:../admin/changing-browser-session-timeout-interface.html["브라우저 비활성 시간 초과"] 옵션이 새 * 구성 * > * 보안 * > * 보안 설정 * 페이지로 이동되었습니다.
+* 를 클릭합니다 link:../admin/manage-link-costs.html["링크 비용"] 옵션이 * 지원 * > * 기타 * > * 링크 비용 * 으로 이동했습니다.
+* NMS 요소 목록이 * support * > * other * > * NMS entities * 로 이동했습니다.
+* 저장된 개체 해싱 * 옵션이 제거되었습니다. SHA-1 * 및 * SHA-256 * 설정은 MD5와 패킷 CRC32 검사를 통해 추가 CPU 리소스가 필요하므로 내부 백그라운드 검증에 더 이상 사용되지 않습니다.
+* 기본 설정 발신자 * 옵션이 제거되었습니다. StorageGRID 배포에 여러 개의 관리 노드가 포함된 경우 기본 관리 노드는 경고 알림, AutoSupport 메시지, SNMP 트랩 및 알림, 레거시 경보 알림을 보내는 기본 보낸 사람이 됩니다. 기본 관리 노드를 사용할 수 없게 되면 다른 관리 노드에서 알림을 임시로 보냅니다. 을 참조하십시오 link:../admin/what-admin-node-is.html["관리 노드란 무엇입니까?"].
+* 를 클릭합니다 link:../admin/configure-firewall-controls.html#untrusted-client-network["신뢰할 수 없는 클라이언트 네트워크 설정입니다"] 구성 * > * 방화벽 제어 * 로 이동했습니다.
+
+
+
+
+== S3 끝점 도메인 이름 형식 제한
+
+IP 주소를 끝점 도메인 이름으로 사용하는 것은 지원되지 않습니다. 향후 릴리즈에서는 구성이 되지 않습니다. 엔드포인트 도메인 이름에 IP 주소를 사용해야 하는 경우 기술 지원 부서에 문의하십시오. 을 참조하십시오 link:../admin/configuring-s3-api-endpoint-domain-names.html["S3 끝점 도메인 이름"].
+
+
+
+== 사용자가 시작한 볼륨 손실 명령이 제거되었습니다
+
+를 클릭합니다 `proc/CMSI/Volume_Lost` 이(가) 제거되었습니다. 를 사용합니다 `repair-data start-replicated-volume-repair` 볼륨에 대해 복제된 데이터를 복원하는 명령입니다.

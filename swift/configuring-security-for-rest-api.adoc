@@ -1,0 +1,110 @@
+---
+permalink: swift/configuring-security-for-rest-api.html 
+sidebar: sidebar 
+keywords: configure rest api security 
+summary: REST API에 대해 구현된 보안 조치를 검토하고 시스템 보안 방법을 이해해야 합니다. 
+---
+= REST API에 대한 보안을 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+REST API에 대해 구현된 보안 조치를 검토하고 시스템 보안 방법을 이해해야 합니다.
+
+
+
+== StorageGRID가 REST API에 보안을 제공하는 방법
+
+StorageGRID 시스템이 REST API에 대한 보안, 인증 및 권한 부여를 구현하는 방법을 이해해야 합니다.
+
+StorageGRID는 다음과 같은 보안 조치를 사용합니다.
+
+* 로드 밸런서 끝점에 HTTPS가 구성되어 있는 경우 로드 밸런서 서비스와의 클라이언트 통신은 HTTPS를 사용합니다.
++
+언제 link:../admin/configuring-load-balancer-endpoints.html["로드 밸런서 끝점을 구성합니다"], 선택적으로 HTTP를 활성화할 수 있습니다. 예를 들어, 테스트 또는 기타 비운영 목적으로 HTTP를 사용할 수 있습니다.
+
+* 기본적으로 StorageGRID는 스토리지 노드와의 클라이언트 통신에 HTTPS를 사용합니다.
++
+필요한 경우 link:../admin/changing-network-options-object-encryption.html["이러한 연결에 대해 HTTP를 활성화합니다"]. 예를 들어, 테스트 또는 기타 비운영 목적으로 HTTP를 사용할 수 있습니다.
+
+* StorageGRID와 클라이언트 간의 통신은 TLS를 사용하여 암호화됩니다.
+* 로드 밸런서 끝점이 HTTP 또는 HTTPS 연결을 허용하도록 구성되었는지 여부에 관계없이 그리드 내의 로드 밸런서 서비스와 스토리지 노드 간의 통신이 암호화됩니다.
+* 클라이언트는 REST API 작업을 수행하기 위해 StorageGRID에 HTTP 인증 헤더를 제공해야 합니다.
+
+
+
+
+=== 보안 인증서 및 클라이언트 응용 프로그램
+
+클라이언트는 게이트웨이 노드 또는 관리 노드의 로드 밸런서 서비스에 직접 스토리지 노드에 연결할 수 있습니다.
+
+모든 경우에 클라이언트 응용 프로그램은 그리드 관리자가 업로드한 사용자 지정 서버 인증서 또는 StorageGRID 시스템에서 생성한 인증서를 사용하여 TLS 연결을 만들 수 있습니다.
+
+* 클라이언트 응용 프로그램이 로드 밸런서 서비스에 연결되면 연결을 만드는 데 사용되는 특정 로드 밸런서 끝점에 대해 구성된 인증서를 사용합니다. 각 끝점마다 고유한 인증서가 있습니다. 이 인증서는 그리드 관리자가 업로드한 사용자 지정 서버 인증서이거나, 끝점 구성 시 그리드 관리자가 StorageGRID에서 생성한 인증서입니다.
+* 클라이언트 애플리케이션이 스토리지 노드에 직접 접속하면 시스템 인증 기관에서 서명한 StorageGRID 시스템을 설치할 때 스토리지 노드에 대해 생성된 시스템 생성 서버 인증서를 사용합니다. 또는 그리드 관리자가 그리드에 제공하는 단일 사용자 정의 서버 인증서입니다.
+
+
+클라이언트가 TLS 연결을 설정하는 데 사용하는 인증서를 신뢰하도록 구성해야 합니다.
+
+을 참조하십시오 link:../admin/configuring-load-balancer-endpoints.html["부하 분산 장치 엔드포인트 구성"] 및 link:../admin/configuring-custom-server-certificate-for-storage-node.html["단일 사용자 지정 서버 인증서 추가"] 스토리지 노드에 직접 연결된 TLS 연결의 경우
+
+
+
+=== 요약
+
+다음 표에서는 S3 및 Swift REST API에서 보안 문제가 구현되는 방식을 보여 줍니다.
+
+|===
+| 보안 문제 | REST API 구현 
+
+
+ a| 
+연결 보안
+ a| 
+TLS
+
+
+
+ a| 
+서버 인증
+ a| 
+시스템 CA에서 서명한 X.509 서버 인증서 또는 관리자가 제공한 사용자 지정 서버 인증서입니다
+
+
+
+ a| 
+클라이언트 인증
+ a| 
+* S3:S3 계정(액세스 키 ID 및 비밀 액세스 키)
+* Swift:Swift 계정(사용자 이름 및 암호)
+
+
+
+
+ a| 
+클라이언트 인증
+ a| 
+* S3: 버킷 소유권 및 모든 적용 가능한 액세스 제어 정책
+* Swift: 관리자 역할 액세스
+
+
+|===
+
+
+== TLS 라이브러리에 대해 지원되는 해시 및 암호화 알고리즘
+
+StorageGRID 시스템은 TLS(전송 계층 보안) 세션을 설정할 때 클라이언트 응용 프로그램에서 사용할 수 있는 제한된 암호화 그룹 세트를 지원합니다. 암호를 구성하려면 * 구성 * > * 보안 * > * 보안 설정 * 으로 이동하여 * TLS 및 SSH 정책 * 을 선택합니다.
+
+
+
+=== 지원되는 TLS 버전입니다
+
+StorageGRID는 TLS 1.2 및 TLS 1.3을 지원합니다.
+
+
+IMPORTANT: SSLv3 및 TLS 1.1(또는 이전 버전)은 더 이상 지원되지 않습니다.
+
+.관련 정보
+link:configuring-tenant-accounts-and-connections.html["테넌트 계정 및 연결을 구성합니다"]

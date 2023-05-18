@@ -1,0 +1,24 @@
+---
+permalink: installconfig/gathering-installation-information-overview.html 
+sidebar: sidebar 
+keywords: install, information, site, pre-install, preparing, prepare, preinstall, info, preparation 
+summary: StorageGRID 어플라이언스를 설치 및 구성할 때 이더넷 스위치 포트, IP 주소, 포트 및 네트워크 연결 모드에 대한 정보를 결정하고 수집합니다. 
+---
+= 설치 정보 수집: 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 어플라이언스를 설치 및 구성할 때 이더넷 스위치 포트, IP 주소, 포트 및 네트워크 연결 모드에 대한 정보를 결정하고 수집합니다.
+
+필요한 정보를 확인하려면 해당 제품의 지침을 참조하십시오.
+
+* link:gathering-installation-information-sg6100.html["SGF6112"]
+* link:gathering-installation-information-sg6000.html["SG6000"]
+* link:gathering-installation-information-sg5700.html["SG5700"]
+* link:gathering-installation-information-sg100-and-sg1000.html["SG100 및 SG1000"]
+
+
+또는 NetApp 프로페셔널 서비스 컨설턴트와 함께 NetApp ConfigBuilder 툴을 사용하여 구성 단계를 간소화하고 자동화할 수 있습니다. 을 참조하십시오 link:automating-appliance-installation-and-configuration.html["어플라이언스 설치 및 구성 자동화"].

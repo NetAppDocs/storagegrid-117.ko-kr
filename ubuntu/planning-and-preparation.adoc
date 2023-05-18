@@ -1,0 +1,41 @@
+---
+permalink: ubuntu/planning-and-preparation.html 
+sidebar: sidebar 
+keywords: how to prepare for ubuntu or debian installation 
+summary: 그리드 노드를 배포하고 StorageGRID 그리드를 구성하기 전에 절차를 완료하기 위한 단계와 요구 사항을 숙지해야 합니다. 
+---
+= 설치하기 전에(Ubuntu 또는 Debian)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+그리드 노드를 구축하고 StorageGRID를 구성하기 전에 절차를 완료하기 위한 단계와 요구 사항을 숙지해야 합니다.
+
+StorageGRID 배포 및 구성 절차에서는 StorageGRID 시스템의 아키텍처 및 작동에 대해 잘 알고 있다고 가정합니다.
+
+단일 사이트 또는 여러 사이트를 한 번에 배포할 수 있지만, 모든 사이트는 최소 3개의 스토리지 노드를 보유해야 하는 최소 요구 사항을 충족해야 합니다.
+
+StorageGRID 설치를 시작하기 전에 다음을 수행해야 합니다.
+
+* 각 노드의 최소 CPU 및 RAM 요구 사항을 비롯한 컴퓨팅 요구 사항을 이해합니다.
+* StorageGRID가 트래픽 분리, 보안 및 관리의 편의를 위해 여러 네트워크를 지원하는 방법을 이해하고 각 StorageGRID 노드에 연결할 네트워크를 계획합니다.
++
+StorageGRID를 참조하십시오 link:../network/index.html["네트워킹 지침"].
+
+* 각 그리드 노드 유형의 스토리지 및 성능 요구 사항을 이해합니다.
+* 구축할 StorageGRID 노드의 수와 유형을 지원하기에 충분한 리소스를 제공하는 물리적 서버 세트, 가상 서버 또는 둘 다 식별합니다.
+* 을(를) 이해합니다 link:node-container-migration-requirements.html["노드 마이그레이션에 대한 요구사항"]서비스 중단 없이 물리적 호스트에 대해 예약된 유지 관리를 수행하려는 경우
+* 모든 네트워킹 정보를 미리 수집합니다. DHCP를 사용하지 않는 경우 각 그리드 노드에 할당할 IP 주소와 사용할 DNS 및 NTP 서버의 IP 주소를 수집합니다.
+* 모든 StorageGRID 어플라이언스를 포함하여 필요한 모든 하드웨어를 사양에 맞게 설치, 연결 및 구성합니다.
++
+
+IMPORTANT: StorageGRID 설치에서 StorageGRID 어플라이언스(하드웨어) 스토리지 노드를 사용하지 않는 경우 BBWC(배터리 지원 쓰기 캐시)와 함께 하드웨어 RAID 스토리지를 사용해야 합니다. StorageGRID는 VSAN(Virtual Storage Area Network), 소프트웨어 RAID 또는 RAID 보호 사용을 지원하지 않습니다.
+
++
+
+NOTE: StorageGRID 설치 절차에는 하드웨어 관련 설치 및 통합 지침이 포함되어 있지 않습니다. StorageGRID 어플라이언스를 설치하는 방법은 를 참조하십시오 link:../installconfig/index.html["어플라이언스 하드웨어를 설치합니다"].
+
+* 사용할 수 있는 배포 및 구성 도구 중에서 선택합니다.
+

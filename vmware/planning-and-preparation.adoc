@@ -1,0 +1,35 @@
+---
+permalink: vmware/planning-and-preparation.html 
+sidebar: sidebar 
+keywords: how to plan before installation 
+summary: 그리드 노드를 배포하고 StorageGRID 그리드를 구성하기 전에 절차를 완료하기 위한 단계와 요구 사항을 숙지해야 합니다. 
+---
+= 설치 전(VMware)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+그리드 노드를 배포하고 StorageGRID 그리드를 구성하기 전에 절차를 완료하기 위한 단계와 요구 사항을 숙지해야 합니다.
+
+StorageGRID 배포 및 구성 절차에서는 StorageGRID 시스템의 아키텍처 및 운영 기능에 익숙하다고 가정합니다.
+
+단일 사이트 또는 여러 사이트를 한 번에 배포할 수 있지만, 모든 사이트는 최소 3개의 스토리지 노드를 보유해야 하는 최소 요구 사항을 충족해야 합니다.
+
+노드 배포 및 그리드 구성 절차를 시작하기 전에 다음을 수행해야 합니다.
+
+* StorageGRID 구축 계획
+* 모든 StorageGRID 어플라이언스를 포함하여 필요한 모든 하드웨어를 사양에 맞게 설치, 연결 및 구성합니다.
++
+
+IMPORTANT: StorageGRID 설치에서 StorageGRID 어플라이언스(하드웨어) 스토리지 노드를 사용하지 않는 경우 BBWC(배터리 지원 쓰기 캐시)와 함께 하드웨어 RAID 스토리지를 사용해야 합니다. StorageGRID는 VSAN(Virtual Storage Area Network), 소프트웨어 RAID 또는 RAID 보호 사용을 지원하지 않습니다.
+
++
+
+NOTE: StorageGRID 설치 절차에는 하드웨어 관련 설치 및 통합 지침이 포함되어 있지 않습니다. StorageGRID 어플라이언스를 설치하는 방법은 를 참조하십시오 link:../installconfig/index.html["어플라이언스 하드웨어를 설치합니다"].
+
+* 을(를) 이해합니다 link:../network/index.html["사용 가능한 네트워크 옵션 및 그리드 노드에서 각 네트워크 옵션을 구현하는 방법"].
+* 모든 네트워킹 정보를 미리 수집합니다. DHCP를 사용하지 않는 경우 각 그리드 노드에 할당할 IP 주소와 사용할 DNS 및 NTP 서버의 IP 주소를 수집합니다.
+* 사용할 수 있는 배포 및 구성 도구 중에서 선택합니다.
+

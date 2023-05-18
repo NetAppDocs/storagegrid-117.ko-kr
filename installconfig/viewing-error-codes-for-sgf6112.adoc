@@ -1,0 +1,374 @@
+---
+permalink: installconfig/viewing-error-codes-for-sgf6112.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, error codes, bmc 
+summary: 어플라이언스를 부팅할 때 하드웨어 오류가 발생하면 BMC가 오류 코드를 기록합니다. 필요한 경우 BMC 인터페이스를 사용하여 이러한 오류 코드를 확인한 다음 기술 지원 팀과 협력하여 문제를 해결할 수 있습니다. 
+---
+= 오류 코드 보기(SGF6112)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+어플라이언스를 부팅할 때 하드웨어 오류가 발생하면 BMC가 오류 코드를 기록합니다. 필요한 경우 BMC 인터페이스를 사용하여 이러한 오류 코드를 확인한 다음 기술 지원 팀과 협력하여 문제를 해결할 수 있습니다.
+
+.시작하기 전에
+* BMC 대시보드에 액세스하는 방법을 알고 있습니다.
+
+
+.단계
+. BMC 대시보드에서 * BIOS POST 코드 * 를 선택합니다.
+. 현재 코드 및 이전 코드에 대해 표시된 정보를 검토합니다.
++
+다음 오류 코드 중 하나가 표시되면 기술 지원 부서의 도움을 받고 문제를 해결하십시오.
+
++
+[cols="1a,3a"]
+|===
+| 코드 | 를 나타냅니다 
+
+
+ a| 
+0x0E
+ a| 
+마이크로코드를 찾을 수 없습니다
+
+
+
+ a| 
+0x0F
+ a| 
+마이크로코드가 로드되지 않았습니다
+
+
+
+ a| 
+0x50
+ a| 
+메모리 초기화 오류. 잘못된 메모리 유형 또는 호환되지 않는 메모리 속도입니다.
+
+
+
+ a| 
+0x51
+ a| 
+메모리 초기화 오류. SPD 판독에 실패했습니다.
+
+
+
+ a| 
+0x52
+ a| 
+메모리 초기화 오류. 잘못된 메모리 크기 또는 메모리 모듈이 일치하지 않습니다.
+
+
+
+ a| 
+0x53
+ a| 
+메모리 초기화 오류. 사용 가능한 메모리가 없습니다.
+
+
+
+ a| 
+0x54
+ a| 
+지정되지 않은 메모리 초기화 오류입니다
+
+
+
+ a| 
+0x55
+ a| 
+메모리가 설치되지 않았습니다
+
+
+
+ a| 
+0x56
+ a| 
+잘못된 CPU 유형 또는 속도입니다
+
+
+
+ a| 
+0x57
+ a| 
+CPU가 일치하지 않습니다
+
+
+
+ a| 
+0x58
+ a| 
+CPU 자체 테스트에 실패했거나 CPU 캐시 오류가 발생했을 수 있습니다
+
+
+
+ a| 
+0x59
+ a| 
+CPU 마이크로 코드를 찾을 수 없거나 마이크로 코드를 업데이트하지 못했습니다
+
+
+
+ a| 
+0x5A
+ a| 
+내부 CPU 오류입니다
+
+
+
+ a| 
+0x5B
+ a| 
+PPI 재설정을 사용할 수 없습니다
+
+
+
+ a| 
+0x5C
+ a| 
+PEI 단계 BMC 자체 테스트에 실패했습니다
+
+
+
+ a| 
+0xD0
+ a| 
+CPU 초기화 오류
+
+
+
+ a| 
+0xD1
+ a| 
+노스 브리지 초기화 오류
+
+
+
+ a| 
+0xD2
+ a| 
+South bridge 초기화 오류
+
+
+
+ a| 
+3
+ a| 
+일부 아키텍처 프로토콜은 사용할 수 없습니다
+
+
+
+ a| 
+0xD4
+ a| 
+PCI 리소스 할당 오류입니다. 리소스 부족.
+
+
+
+ a| 
+0xD5
+ a| 
+레거시 옵션 ROM에 대한 공간이 없습니다
+
+
+
+ a| 
+0xD6
+ a| 
+콘솔 출력 장치를 찾을 수 없습니다
+
+
+
+ a| 
+0xD7
+ a| 
+콘솔 입력 장치를 찾을 수 없습니다
+
+
+
+ a| 
+0xD8
+ a| 
+잘못된 암호입니다
+
+
+
+ a| 
+0xD9
+ a| 
+부팅 옵션 로드 중 오류 발생(LoadImage가 오류를 반환함)
+
+
+
+ a| 
+0xDA
+ a| 
+부팅 옵션 실패(StartImage가 오류를 반환함)
+
+
+
+ a| 
+0xDB입니다
+ a| 
+플래시를 업데이트하지 못했습니다
+
+
+
+ a| 
+0xDC
+ a| 
+재설정 프로토콜을 사용할 수 없습니다
+
+
+
+ a| 
+0xDD
+ a| 
+DXE 단계 BMC 자체 테스트 실패
+
+
+
+ a| 
+0xE8
+ a| 
+MRC:ERR_NO_MEMORY
+
+
+
+ a| 
+0xE9
+ a| 
+MRC:ERR_LT_LOCK
+
+
+
+ a| 
+0xEA
+ a| 
+MRC:ERR_DDR_INIT
+
+
+
+ a| 
+0xEB
+ a| 
+MRC:ERR_MEM_TEST
+
+
+
+ a| 
+0xEC
+ a| 
+MRC:ERR_VENDOR_VENDOR_VENCE
+
+
+
+ a| 
+0XED
+ a| 
+MRC:ERR_DIMM_COMPAT
+
+
+
+ a| 
+0xEE
+ a| 
+MRC:ERR_MRC_compatibility
+
+
+
+ a| 
+0xEF
+ a| 
+MRC:ERR_MRC_struct
+
+
+
+ a| 
+0xF0
+ a| 
+MRC:ERR_SET_VDD
+
+
+
+ a| 
+0xF1
+ a| 
+MRC:ERR_IOT_MEM_BUFFER
+
+
+
+ a| 
+0xF2
+ a| 
+MRC:ERR_RC_INTERNAL입니다
+
+
+
+ a| 
+0xF3
+ a| 
+MRC:ERR_INVALID_REG_ACCESS
+
+
+
+ a| 
+0xF4
+ a| 
+MRC:ERR_SET_MC_Freq
+
+
+
+ a| 
+0xF5
+ a| 
+MRC:ERR_READ_MC_Freq
+
+
+
+ a| 
+0x70
+ a| 
+MRC:ERR_DIMM_CHANNEL
+
+
+
+ a| 
+0x74
+ a| 
+MRC:ERR_BIST_CHECK
+
+
+
+ a| 
+0xF6
+ a| 
+MRC:ERR_SMBus를 선택합니다
+
+
+
+ a| 
+0xF7
+ a| 
+MRC:ERR_PCU
+
+
+
+ a| 
+0xF8
+ a| 
+MRC:ERR_NGN
+
+
+
+ a| 
+0xF9
+ a| 
+MRC:ERR_interLeave_failure
+
+|===
+

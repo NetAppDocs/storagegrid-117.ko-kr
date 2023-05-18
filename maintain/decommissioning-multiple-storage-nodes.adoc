@@ -1,0 +1,18 @@
+---
+permalink: maintain/decommissioning-multiple-storage-nodes.html 
+sidebar: sidebar 
+keywords: storagegrid, decommission nodes, storage node, multiple storage nodes 
+summary: 둘 이상의 스토리지 노드를 제거해야 하는 경우 순차적으로 또는 병렬로 서비스 해제할 수 있습니다. 
+---
+= 여러 스토리지 노드의 서비스 해제
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+둘 이상의 스토리지 노드를 제거해야 하는 경우 순차적으로 또는 병렬로 서비스 해제할 수 있습니다.
+
+* 스토리지 노드를 순차적으로 서비스 해제하는 경우 다음 스토리지 노드의 서비스 해제를 시작하기 전에 첫 번째 스토리지 노드가 서비스 해제를 완료할 때까지 기다려야 합니다.
+* 스토리지 노드를 병렬로 폐기하는 경우 스토리지 노드는 사용 중단 중인 모든 스토리지 노드에 대한 서비스 해제 작업을 동시에 처리합니다. 이로 인해 파일의 모든 영구 사본이 "읽기 전용"으로 표시되어 이 기능이 활성화된 그리드의 삭제를 일시적으로 비활성화할 수 있습니다.
+

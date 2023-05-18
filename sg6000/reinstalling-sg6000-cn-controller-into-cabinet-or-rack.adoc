@@ -1,0 +1,55 @@
+---
+permalink: sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn 
+summary: 하드웨어 유지 관리가 완료되면 컨트롤러를 캐비닛 또는 랙에 다시 설치합니다. 
+---
+= 캐비닛 또는 랙에 SG6000-CN 컨트롤러를 다시 설치합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+하드웨어 유지 관리가 완료되면 컨트롤러를 캐비닛 또는 랙에 다시 설치합니다.
+
+.시작하기 전에
+컨트롤러 덮개를 다시 설치했습니다.
+
+link:reinstalling-sg6000-cn-controller-cover.html["SG6000-CN 컨트롤러 덮개를 다시 설치합니다"]
+
+.단계
+. 파란색 레일을 누르면 두 랙 레일이 동시에 풀릴 수 있으며 SG6000-CN 컨트롤러가 완전히 장착될 때까지 랙에 밀어 넣습니다.
++
+컨트롤러를 더 이상 이동할 수 없는 경우 섀시 양쪽에 있는 파란색 래치를 당겨 컨트롤러를 완전히 밀어 넣습니다.
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG6000 레일 위의 슬라이딩]
+
++
+
+NOTE: 컨트롤러의 전원을 켜기 전에는 전면 베젤을 연결하지 마십시오.
+
+. 컨트롤러 전면 패널의 조임 나사를 조여 컨트롤러를 랙에 고정합니다.
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060 랙 고정 나사]
+
+. ESD 밴드의 스트랩 끝을 손목 둘레에 감고 클립 끝을 금속 바닥에 단단히 고정하여 정전기 방전을 방지하십시오.
+. 컨트롤러 데이터 케이블과 모든 SFP+ 또는 SFP28 트랜시버를 다시 연결합니다.
++
+
+IMPORTANT: 성능 저하를 방지하려면 케이블을 비틀거나 접거나 끼거나 밟지 마십시오.
+
++
+link:../installconfig/cabling-appliance-sg6000.html["케이블 어플라이언스(SG6000)"]
+
+. 컨트롤러 전원 케이블을 다시 연결합니다.
++
+link:../installconfig/connecting-power-cords-and-applying-power-sg6000.html["전원 코드 연결 및 전원 공급(SG6000)"]
+
+
+
+.작업을 마친 후
+컨트롤러를 다시 시작할 수 있습니다.
+
+link:powering-on-sg6000-cn-controller-and-verifying-operation.html["SG6000-CN 컨트롤러의 전원을 켜고 작동을 확인합니다"]

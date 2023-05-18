@@ -1,0 +1,16 @@
+---
+permalink: sg6100/replacing-nic-in-sgf6112.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, Replacing, replace, nic, network interface card 
+summary: 'SGF6112의 네트워크 인터페이스 카드\(NIC\)가 제대로 작동하지 않거나 오류가 발생한 경우 이를 교체해야 할 수 있습니다.' 
+---
+= SGF6112에서 네트워크 인터페이스 카드를 교체합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SGF6112의 네트워크 인터페이스 카드(NIC)가 제대로 작동하지 않거나 오류가 발생한 경우 이를 교체해야 할 수 있습니다.
+
+다음 절차에 따라* 교체할 NIC 확인* NIC 제거* NIC 재설치

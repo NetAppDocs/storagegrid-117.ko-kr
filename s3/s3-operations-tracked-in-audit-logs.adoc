@@ -1,0 +1,51 @@
+---
+permalink: s3/s3-operations-tracked-in-audit-logs.html 
+sidebar: sidebar 
+keywords: audit log actions tracked 
+summary: StorageGRID 감사 로그에서 여러 버킷 작업 및 오브젝트 작업을 추적합니다. 
+---
+= 감사 로그에서 S3 작업을 추적했습니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 감사 로그에서 여러 버킷 작업 및 오브젝트 작업을 추적합니다.
+
+
+
+== 감사 로그에서 버킷 작업을 추적했습니다
+
+* 버킷 삭제
+* 버킷 태그 지정을 삭제합니다
+* 여러 개체를 삭제합니다
+* 버킷 가져오기(객체 나열)
+* 버킷 객체 버전을 가져옵니다
+* 버킷 태그 지정을 가져옵니다
+* 헤드 버킷
+* 버킷 을 놓습니다
+* 버킷 규정 준수
+* Bucket 태그 달기
+* 버킷 버전 관리
+
+
+
+
+== 감사 로그에서 추적된 객체 작업입니다
+
+* 멀티파트 업로드를 완료합니다
+* 파트 업로드(ILM 규칙이 균형 또는 엄격 수집 동작을 사용하는 경우)
+* Upload Part-Copy (ILM 규칙이 Balanced 또는 Strict 수집 동작을 사용하는 경우)
+* 개체 삭제
+* 객체 가져오기
+* 헤드 개체
+* 사후 개체 복원
+* 개체 를 넣습니다
+* 개체 - 복사 를 선택합니다
+
+
+.관련 정보
+link:operations-on-buckets.html["버킷 작업"]
+
+link:operations-on-objects.html["객체에 대한 작업"]

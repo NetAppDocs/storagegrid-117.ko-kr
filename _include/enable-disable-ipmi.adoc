@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+
+NOTE: Management API private endpoint, put/private/bmc를 포함하는 모든 어플라이언스에 대해 원격 IPMI 액세스를 설정하거나 해제할 수 있습니다.

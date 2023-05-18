@@ -1,0 +1,36 @@
+---
+permalink: sg6100/removing-sgf6112-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, cover, remove, removing, removal 
+summary: 유지보수를 위해 내부 부품에 접근하려면 제품 덮개를 분리하십시오. 
+---
+= SGF6112 덮개를 제거합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+유지보수를 위해 내부 부품에 접근하려면 제품 덮개를 분리하십시오.
+
+.시작하기 전에
+캐비닛 또는 랙에서 제품을 분리하여 상단 덮개에 액세스하십시오.
+
+link:reinstalling-sgf6112-into-cabinet-or-rack.html#remove-from-rack["캐비닛 또는 랙에서 SGF6112를 제거합니다"]
+
+.단계
+. SGF6112 덮개 래치가 잠겨 있지 않은지 확인합니다. 필요한 경우 래치 잠금 장치에 표시된 대로 파란색 플라스틱 래치 잠금 장치를 잠금 해제 방향으로 1/4바퀴 돌립니다.
+. 걸쇠를 위로 돌려 SGF6112 섀시가 멈출 때까지 뒤쪽으로 돌린 다음 섀시에서 덮개를 조심스럽게 들어 올려 옆에 둡니다.
++
+image::../media/sg6060_cover_latch_open.jpg[SGF6112 덮개 래치가 열려 있습니다]
+
++
+
+IMPORTANT: ESD 밴드의 스트랩 끝을 손목 둘레에 감고 클립 끝을 금속 바닥에 고정하여 SGF6112 내부에서 작업할 때 정전기 방전을 방지합니다.
+
+
+
+부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
+
+.관련 정보
+link:replace-nic-in-sgf6112.html["NIC를 교체합니다"]

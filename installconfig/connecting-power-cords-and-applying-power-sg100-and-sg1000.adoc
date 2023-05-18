@@ -1,0 +1,28 @@
+---
+permalink: installconfig/connecting-power-cords-and-applying-power-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, gateway node, admin node, wiring, cabling, cable, Connecting, connect, power cords, power, applying power, apply power, turn on, power up, ac, ac power 
+summary: 네트워크 케이블을 연결한 후 어플라이언스에 전원을 공급할 준비가 되었습니다. 
+---
+= 전원 코드를 연결하고 전원을 공급합니다(SG100 및 SG1000).
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+네트워크 케이블을 연결한 후 어플라이언스에 전원을 공급할 준비가 되었습니다.
+
+.단계
+. 전원 코드를 제품에 있는 두 개의 전원 공급 장치에 각각 연결합니다.
+. 이 두 개의 전원 코드를 캐비닛이나 랙에 있는 두 개의 서로 다른 PDU(Power Distribution Unit)에 연결합니다.
+. 제품 앞면에 있는 전원 단추가 현재 파란색으로 켜져 있지 않으면 버튼을 눌러 제품의 전원을 켭니다.
++
+전원을 켜는 동안 전원 단추를 다시 누르지 마십시오.
+
+. 오류가 발생하면 문제를 해결하십시오.
+. 분리한 경우 전면 베젤을 제품에 장착합니다.
+
+
+.관련 정보
+link:viewing-status-indicators.html["상태 표시기를 봅니다"]

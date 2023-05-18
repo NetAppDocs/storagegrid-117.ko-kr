@@ -1,0 +1,46 @@
+---
+permalink: sg6000/reinstalling-fibre-channel-hba.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel, install, installing, installation, reinstall, reinstalling, reinstallation 
+summary: 교체용 Fibre Channel HBA가 제거된 위치와 동일한 위치에 설치됩니다. 
+---
+= Fibre Channel HBA를 다시 설치합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+교체용 Fibre Channel HBA가 제거된 위치와 동일한 위치에 설치됩니다.
+
+.시작하기 전에
+* 올바른 교체용 Fibre Channel HBA가 있습니다.
+* 기존 Fibre Channel HBA를 제거했습니다.
++
+link:removing-fibre-channel-hba.html["Fibre Channel HBA를 제거합니다"]
+
+
+
+.단계
+. ESD 밴드의 스트랩 끝을 손목 둘레에 감고 클립 끝을 금속 바닥에 단단히 고정하여 정전기 방전을 방지하십시오.
+. 교체용 Fibre Channel HBA를 포장에서 꺼냅니다.
+. 파란색 어댑터 걸쇠가 열린 상태에서 파이버 채널 HBA를 라이저 어셈블리의 커넥터와 맞춘 다음 어댑터가 완전히 장착될 때까지 커넥터에 조심스럽게 누릅니다.
++
+image::../media/sg6060_fc_hba_location.jpg[라이저 어셈블리의 SG6060 파이버 채널 HBA]
+
++
+라이저 어셈블리에는 파이버 채널 HBA와 이더넷 네트워크 어댑터의 두 어댑터가 있습니다. Fibre Channel HBA는 그림에 나와 있습니다.
+
+. 라이저 어셈블리의 올바른 위치를 위해 시스템 보드의 가이드 핀에 맞춰진 라이저 어셈블리(원으로 표시됨)의 정렬 구멍을 찾습니다.
++
+image::../media/sg6060_riser_alignment_hole.jpg[SG6060 라이저 어셈블리의 정렬 구멍]
+
+. 라이저 조립품을 섀시에 놓고 시스템 보드의 커넥터 및 가이드 핀에 맞춥니다. 그런 다음 라이저 조립품을 삽입합니다.
+. 라이저 조립품이 파란색 표시가 있는 구멍 옆에 있는 중앙 라인을 따라 완전히 장착될 때까지 조심스럽게 누르십시오.
+. 케이블을 다시 설치할 Fibre Channel HBA 포트에서 보호 캡을 제거합니다.
+
+
+.작업을 마친 후
+컨트롤러에서 수행할 다른 유지보수 절차가 없는 경우 컨트롤러 덮개를 다시 설치합니다.
+
+link:reinstalling-sg6000-cn-controller-cover.html["SG6000-CN 컨트롤러 덮개를 다시 설치합니다"]

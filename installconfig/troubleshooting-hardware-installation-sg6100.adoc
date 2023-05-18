@@ -1,0 +1,14 @@
+---
+permalink: installconfig/troubleshooting-hardware-installation-sg6100.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112,troubleshoot, troubleshooting, hardware, install, installation 
+summary: 설치 중에 문제가 발생하는 경우 하드웨어 설정 및 연결 문제와 관련된 문제 해결 정보를 검토하는 것이 도움이 될 수 있습니다. 
+---
+= 하드웨어 설치 문제 해결(SGF6112)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+설치 중에 문제가 발생하는 경우 하드웨어 설정 및 연결 문제와 관련된 문제 해결 정보를 검토하는 것이 도움이 될 수 있습니다.

@@ -1,0 +1,35 @@
+---
+permalink: upgrade/impact-of-upgrade-on-groups-and-user-accounts.html 
+sidebar: sidebar 
+keywords: upgrade, permissions 
+summary: 업그레이드가 완료된 후 그룹 및 사용자 계정을 적절하게 업데이트할 수 있도록 StorageGRID 업그레이드의 영향을 이해해야 합니다. 
+---
+= 그룹 및 사용자 계정에 대한 업그레이드의 영향
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+업그레이드가 완료된 후 그룹 및 사용자 계정을 적절하게 업데이트할 수 있도록 StorageGRID 업그레이드의 영향을 이해해야 합니다.
+
+
+
+== 그룹 권한 및 옵션에 대한 변경
+
+StorageGRID 11.7로 업그레이드한 후 필요에 따라 다음과 같은 새 권한을 테넌트 사용자 그룹에 할당합니다.
+
+[cols="1a,2a"]
+|===
+| 권한 | 설명 
+
+
+ a| 
+테넌트 관리자 > S3 콘솔을 통해 오브젝트 관리 를 선택합니다
+ a| 
+모든 버킷 관리 권한과 함께 이 권한을 사용하면 사용자가 에 액세스할 수 있습니다 link:../tenant/use-s3-console.html["Experimental S3 Console을 선택합니다"] Bucket 페이지에서 선택합니다.
+
+이 권한이 있지만 모든 버킷 관리 권한이 없는 사용자는 여전히 실험 S3 콘솔로 직접 이동할 수 있습니다.
+
+|===
+을 참조하십시오 link:../tenant/tenant-management-permissions.html["테넌트 관리 권한"].

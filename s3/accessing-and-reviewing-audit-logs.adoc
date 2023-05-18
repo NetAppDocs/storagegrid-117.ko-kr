@@ -1,0 +1,54 @@
+---
+permalink: s3/accessing-and-reviewing-audit-logs.html 
+sidebar: sidebar 
+keywords: access audit logs, review audit logs, view audit logs 
+summary: 감사 메시지는 StorageGRID 서비스에서 생성되고 텍스트 로그 파일에 저장됩니다. 감사 로그의 API 관련 감사 메시지는 시스템의 상태를 평가하는 데 도움이 되는 중요한 보안, 운영 및 성능 모니터링 데이터를 제공합니다. 
+---
+= 감사 로그 액세스 및 검토
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+감사 메시지는 StorageGRID 서비스에서 생성되고 텍스트 로그 파일에 저장됩니다. 감사 로그의 API 관련 감사 메시지는 시스템의 상태를 평가하는 데 도움이 되는 중요한 보안, 운영 및 성능 모니터링 데이터를 제공합니다.
+
+.시작하기 전에
+* 특정 액세스 권한이 있습니다.
+* 을(를) 보유하고 있습니다 `Passwords.txt` 파일.
+* 관리 노드의 IP 주소를 알고 있습니다.
+
+
+.이 작업에 대해
+활성 감사 로그 파일의 이름은 입니다 `audit.log`, 및 은 관리 노드에 저장됩니다.
+
+하루에 한 번 활성 audit.log 파일이 저장되고 새 파일이 저장됩니다 `audit.log` 파일이 시작되었습니다. 저장된 파일의 이름은 저장 시기를 형식으로 나타냅니다 `_yyyy-mm-dd.txt_`.
+
+하루 후에는 저장된 파일이 압축되고 이름이 파일 형식으로 변경됩니다 `_yyyy-mm-dd.txt.gz_`원래 날짜를 유지합니다.
+
+이 예제에서는 활성 을 보여 줍니다 `audit.log` 파일, 이전 날짜의 파일입니다 (`2018-04-15.txt`), 및 이전 날짜의 압축 파일 (`2018-04-14.txt.gz`)를 클릭합니다.
+
+[listing]
+----
+audit.log
+2018-04-15.txt
+2018-04-14.txt.gz
+----
+.단계
+. 관리자 노드에 로그인:
++
+.. 다음 명령을 입력합니다. `ssh admin@_primary_Admin_Node_IP_`
+.. 에 나열된 암호를 입력합니다 `Passwords.txt` 파일.
+.. 루트로 전환하려면 다음 명령을 입력합니다. `su -`
+.. 에 나열된 암호를 입력합니다 `Passwords.txt` 파일.
++
+루트로 로그인하면 프롬프트가 에서 변경됩니다 `$` 를 선택합니다 `#`.
+
+
+
+. 감사 로그 파일이 포함된 디렉토리로 이동합니다.
++
+`cd /var/local/audit/export`
+
+. 필요에 따라 현재 또는 저장된 감사 로그 파일을 봅니다.
+

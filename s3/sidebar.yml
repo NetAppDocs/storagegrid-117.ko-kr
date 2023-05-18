@@ -1,0 +1,124 @@
+---
+section: s3
+title: S3 REST API 사용
+entries:
+- title: 지원되는 버전 및 업데이트
+  pdf-filename: StorageGRID에서 S3를 사용합니다
+  url: "/s3/index.html"
+- title: 빠른 참조
+  url: "/s3/quick-reference-support-for-aws-apis.html"
+- title: 테넌트 계정 및 연결을 구성합니다
+  url: "/s3/configuring-tenant-accounts-and-connections.html"
+- title: 플랫폼 서비스 지원
+  url: "/s3/support-for-storagegrid-platform-services.html"
+- title: StorageGRID에서 S3 REST API를 구현하는 방법
+  entries:
+  - title: 클라이언트 요청 충돌
+    url: "/s3/conflicting-client-requests.html"
+  - title: 일관성 제어
+    url: "/s3/consistency-controls.html"
+  - title: StorageGRID ILM 규칙이 개체를 관리하는 방법
+    url: "/s3/how-storagegrid-ilm-rules-manage-objects.html"
+  - title: 오브젝트 버전 관리
+    url: "/s3/object-versioning.html"
+  - title: S3 REST API를 사용하여 S3 오브젝트 잠금을 구성합니다
+    url: "/s3/use-s3-api-for-s3-object-lock.html"
+  - title: S3 라이프사이클 구성을 생성합니다
+    url: "/s3/create-s3-lifecycle-configuration.html"
+  - title: S3 REST API 구현을 위한 권장사항
+    url: "/s3/recommendations-for-implementing-s3-rest-api.html"
+- title: Amazon S3 REST API 지원
+  entries:
+  - title: 구현 세부 정보
+    url: "/s3/s3-rest-api-supported-operations-and-limitations.html"
+  - title: 요청을 인증합니다
+    url: "/s3/authenticating-requests.html"
+  - title: 서비스에 대한 작업
+    url: "/s3/operations-on-the-service.html"
+  - title: 버킷 작업
+    url: "/s3/operations-on-buckets.html"
+    entries:
+    - title: 버킷에 대한 사용자 지정 작업
+      url: "/s3/custom-operations-on-buckets.html"
+  - title: 객체에 대한 작업
+    url: "/s3/operations-on-objects.html"
+    entries:
+    - title: S3 Select를 사용합니다
+      url: "/s3/use-s3-select.html"
+    - title: 서버측 암호화를 사용합니다
+      url: "/s3/using-server-side-encryption.html"
+    - title: 객체 가져오기
+      url: "/s3/get-object.html"
+    - title: 헤드 개체
+      url: "/s3/head-object.html"
+    - title: 사후 개체 복원
+      url: "/s3/post-object-restore.html"
+    - title: 개체 를 넣습니다
+      url: "/s3/put-object.html"
+    - title: 개체 - 복사 를 선택합니다
+      url: "/s3/put-object-copy.html"
+    - title: SelectObjectContent 를 선택합니다
+      url: "/s3/select-object-content.html"
+  - title: 멀티파트 업로드 작업
+    url: "/s3/operations-for-multipart-uploads.html"
+    entries:
+    - title: 다중 파트 업로드 나열
+      url: "/s3/list-multipart-uploads.html"
+    - title: 멀티파트 업로드를 시작합니다
+      url: "/s3/initiate-multipart-upload.html"
+    - title: 부품 업로드
+      url: "/s3/upload-part.html"
+    - title: 업로드 부품 - 복사
+      url: "/s3/upload-part-copy.html"
+    - title: 멀티파트 업로드를 완료합니다
+      url: "/s3/complete-multipart-upload.html"
+  - title: 오류 응답
+    url: "/s3/error-responses.html"
+- title: StorageGRID S3 요청
+  entries:
+  - title: 버킷 일관성 확보
+    url: "/s3/get-bucket-consistency-request.html"
+  - title: 버킷 일관성을 유지합니다
+    url: "/s3/put-bucket-consistency-request.html"
+  - title: 버킷 최종 액세스 시간 가져오기
+    url: "/s3/get-bucket-last-access-time-request.html"
+  - title: 버킷 최종 접근 시간
+    url: "/s3/put-bucket-last-access-time-request.html"
+  - title: 버킷 메타데이터 알림 구성을 삭제합니다
+    url: "/s3/delete-bucket-metadata-notification-configuration-request.html"
+  - title: Bucket 메타데이터 알림 구성 가져오기
+    url: "/s3/get-bucket-metadata-notification-configuration-request.html"
+  - title: Put Bucket 메타데이터 알림 구성
+    url: "/s3/put-bucket-metadata-notification-configuration-request.html"
+  - title: 스토리지 사용량을 가져옵니다
+    url: "/s3/get-storage-usage-request.html"
+  - title: 레거시 규정 준수를 위한 더 이상 사용되지 않는 버킷 요청
+    url: "/s3/deprecated-bucket-requests-for-legacy-compliance.html"
+    entries:
+    - title: 폐기됨 - 규정 준수를 위해 버킷 요청을 수정합니다
+      url: "/s3/deprecated-put-bucket-request-modifications-for-compliance.html"
+    - title: 사용되지 않음 - 버킷 준수 요청 가져오기
+      url: "/s3/deprecated-get-bucket-compliance-request.html"
+    - title: 폐기됨 - 버킷 준수 요청을 넣으십시오
+      url: "/s3/deprecated-put-bucket-compliance-request.html"
+- title: 버킷 및 그룹 액세스 정책
+  entries:
+  - title: 버킷 및 그룹 액세스 정책을 사용합니다
+    url: "/s3/bucket-and-group-access-policies.html"
+  - title: 버킷 정책의 예
+    url: "/s3/example-bucket-policies.html"
+  - title: 그룹 정책의 예
+    url: "/s3/example-group-policies.html"
+- title: REST API에 대한 보안을 구성합니다
+  url: "/s3/configuring-security-for-rest-api.html"
+- title: 운영 모니터링 및 감사
+  entries:
+  - title: 오브젝트 수집 및 검색 속도 모니터링
+    url: "/s3/monitoring-object-ingest-and-retrieval-rates.html"
+  - title: 감사 로그 액세스 및 검토
+    url: "/s3/accessing-and-reviewing-audit-logs.html"
+    entries:
+    - title: S3 작업이 감사 로그에서 추적되었습니다
+      url: "/s3/s3-operations-tracked-in-audit-logs.html"
+- title: 활성, 유휴 및 동시 HTTP 연결의 이점
+  url: "/s3/benefits-of-active-idle-and-concurrent-http-connections.html"

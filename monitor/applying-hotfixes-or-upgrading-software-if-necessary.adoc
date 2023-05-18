@@ -1,0 +1,49 @@
+---
+permalink: monitor/applying-hotfixes-or-upgrading-software-if-necessary.html 
+sidebar: sidebar 
+keywords: how to apply software upgrade, how to apply hotfix 
+summary: 핫픽스나 새 버전의 StorageGRID 소프트웨어를 사용할 수 있는 경우 업데이트가 시스템에 적합한지 평가하고 필요한 경우 설치해야 합니다. 
+---
+= 필요한 경우 핫픽스 또는 업그레이드 소프트웨어를 적용합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+핫픽스나 새 버전의 StorageGRID 소프트웨어를 사용할 수 있는 경우 업데이트가 시스템에 적합한지 평가하고 필요한 경우 설치해야 합니다.
+
+.이 작업에 대해
+StorageGRID 핫픽스에는 기능 또는 패치 릴리스 외부에서 사용할 수 있는 소프트웨어 변경 사항이 포함되어 있습니다. 동일한 변경 사항이 향후 릴리스에 포함됩니다.
+
+.단계
+. 로 이동합니다https://["NetApp 다운로드: StorageGRID"^].
+. 다운로드할 수 있는 업데이트 목록을 보려면 * 유형/버전 선택 * 필드의 아래쪽 화살표를 선택하십시오.
++
+** * StorageGRID 소프트웨어 버전 *: 11._x. y _
+** StorageGRID 핫픽스 *:11._x.x.y.z_
+
+
+. 업데이트에 포함된 변경 사항을 검토합니다.
++
+.. 메뉴에서 버전을 선택하고 * GO * 를 선택합니다.
+.. NetApp 계정의 사용자 이름과 암호를 사용하여 로그인합니다.
+.. 최종 사용자 사용권 계약을 읽고 동의합니다.
++
+선택한 버전의 다운로드 페이지가 나타납니다.
+
+
+
+. 소프트웨어 버전 또는 핫픽스에 포함된 변경 사항에 대해 알아봅니다.
++
+** 새 소프트웨어 버전은 를 참조하십시오 link:../upgrade/whats-new.html["새로운 소식"] 선택한 버전의 경우.
+** 핫픽스의 경우 README 파일을 다운로드하여 핫픽스에 포함된 변경 사항을 요약하십시오.
+
+
+. 소프트웨어 업데이트가 필요한 경우 계속하기 전에 지침을 찾습니다.
++
+** 새 소프트웨어 버전의 경우 의 지침을 주의 깊게 따릅니다 link:../upgrade/index.html["소프트웨어 업그레이드 중"].
+** 핫픽스는 을 참조하십시오 link:../maintain/storagegrid-hotfix-procedure.html["StorageGRID 핫픽스 절차"].
+
+
+
