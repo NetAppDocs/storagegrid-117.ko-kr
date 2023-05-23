@@ -17,7 +17,7 @@ StorageGRID 시스템은 각 S3 테넌트 계정에 대해 최대 1,000개의 �
 
 자세한 내용은 다음을 참조하십시오.
 
-* https://["AWS(Amazon Web Services) 문서: 버킷 제한 및 제한 사항"^]
+* https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html["AWS(Amazon Web Services) 문서: 버킷 제한 및 제한 사항"^]
 * link:../admin/configuring-s3-api-endpoint-domain-names.html["S3 끝점 도메인 이름을 구성합니다"]
 
 
@@ -332,7 +332,7 @@ StorageGRID는 다음 작업을 지원하지 않습니다.
  a| 
 이 작업은 를 구성합니다 link:../tenant/understanding-cloudmirror-replication-service.html["StorageGRID CloudMirror 복제"] 요청 본문에 제공된 복제 구성 XML을 사용하는 버킷의 경우 CloudMirror 복제의 경우 다음과 같은 구축 세부 정보를 알고 있어야 합니다.
 
-* StorageGRID는 복제 구성의 V1만 지원합니다. 즉, StorageGRID는 의 사용을 지원하지 않습니다 `Filter` 규칙에 대한 요소로, 개체 버전 삭제에 대한 V1 규칙을 따릅니다. 자세한 내용은 를 참조하십시오 https://["복제 구성에 대한 Amazon S3 문서"^].
+* StorageGRID는 복제 구성의 V1만 지원합니다. 즉, StorageGRID는 의 사용을 지원하지 않습니다 `Filter` 규칙에 대한 요소로, 개체 버전 삭제에 대한 V1 규칙을 따릅니다. 자세한 내용은 를 참조하십시오 https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-add-config.html["복제 구성에 대한 Amazon S3 문서"^].
 * 버킷 복제는 버전 관리되거나 버전이 지정되지 않은 버킷에서 구성할 수 있습니다.
 * 복제 구성 XML의 각 규칙에서 다른 대상 버킷을 지정할 수 있습니다. 소스 버킷은 둘 이상의 대상 버킷에 복제할 수 있습니다.
 * 대상 버킷은 테넌트 관리자 또는 테넌트 관리 API에 지정된 StorageGRID 엔드포인트의 URN으로 지정해야 합니다. 을 참조하십시오 link:../tenant/configuring-cloudmirror-replication.html["CloudMirror 복제를 구성합니다"].

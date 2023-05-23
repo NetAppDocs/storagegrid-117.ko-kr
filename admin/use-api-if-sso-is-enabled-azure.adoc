@@ -42,7 +42,7 @@ URL 인코딩 문제가 있는 경우 다음 오류가 표시될 수 있습니�
 .단계
 . 다음과 같이 필요한 종속성을 설치합니다.
 +
-.. Node.js를 설치합니다(참조) https://["https://nodejs.org/en/download/"^])를 클릭합니다.
+.. Node.js를 설치합니다(참조) https://nodejs.org/en/download/["https://nodejs.org/en/download/"^])를 클릭합니다.
 .. 필요한 Node.js 모듈(puppeteer 및 jsdom)을 설치합니다.
 +
 `npm install -g <module>`

@@ -59,7 +59,7 @@ Azure를 지원합니다
 
 
 
-NOTE: Windows Server 2016에서 을 사용해야 합니다 https://["KB3201845 업데이트"^]또는 그 이상.
+NOTE: Windows Server 2016에서 을 사용해야 합니다 https://support.microsoft.com/en-us/help/3201845/cumulative-update-for-windows-10-version-1607-and-windows-server-2016["KB3201845 업데이트"^]또는 그 이상.
 
 * AD FS 3.0, Windows Server 2012 R2 업데이트 이상에 포함되어 있습니다.
 

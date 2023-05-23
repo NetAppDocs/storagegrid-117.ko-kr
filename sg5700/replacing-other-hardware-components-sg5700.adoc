@@ -84,4 +84,4 @@ E2860 쉘프의 드라이브 드로어 교체
 .관련 정보
 link:replacing-e2800-controller.html["E2800 컨트롤러를 교체합니다"]
 
-http://["NetApp E-Series 시스템 문서 사이트"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E-Series 시스템 문서 사이트"^]

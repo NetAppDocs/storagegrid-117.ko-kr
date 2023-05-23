@@ -19,7 +19,7 @@ StorageGRID 그리드 노드를 복구하려면 먼저 소프트웨어를 다운
 . 현재 설치된 소프트웨어 버전을 확인합니다. 그리드 관리자 상단에서 도움말 아이콘을 선택하고 * 정보 * 를 선택합니다.
 . StorageGRID용 NetApp 다운로드 페이지로 이동합니다.
 +
-https://["NetApp 다운로드: StorageGRID"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 다운로드: StorageGRID"^]
 
 . 그리드에서 현재 실행 중인 StorageGRID 버전을 선택합니다.
 +

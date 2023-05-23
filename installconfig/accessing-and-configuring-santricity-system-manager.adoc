@@ -61,7 +61,7 @@ SANtricity 시스템 관리자를 사용하여 다음 설정을 구성할 수 �
 * 스토리지 컨트롤러 쉘프에 있는 구성 요소에 대한 e-메일 경고, SNMP 경고 또는 syslog 알림을 제공합니다
 * 스토리지 컨트롤러 쉘프의 구성요소에 대한 E-Series AutoSupport 설정입니다.
 +
-E-Series AutoSupport에 대한 자세한 내용은 를 참조하십시오 http://["NetApp E-Series 시스템 문서 사이트"^].
+E-Series AutoSupport에 대한 자세한 내용은 를 참조하십시오 http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E-Series 시스템 문서 사이트"^].
 
 * 드라이브 보안 키 - 보안 드라이브 잠금을 해제하는 데 필요(드라이브 보안 기능이 활성화된 경우 이 단계 필요)
 * SANtricity 시스템 관리자에 액세스하기 위한 관리자 암호입니다

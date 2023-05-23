@@ -27,7 +27,7 @@ StorageGRID 어플라이언스는 StorageGRID 어플라이언스 설치 프로�
 +
 두 버전의 두 번째 숫자가 일치해야 합니다. 예를 들어, StorageGRID 시스템에서 버전 11. * 6 *._x_._y_를 실행하는 경우 StorageGRID 어플라이언스 설치 프로그램 버전은 3. * 6 *._z_이어야 합니다.
 
-. 어플라이언스에 StorageGRID 어플라이언스 설치 프로그램의 하위 수준 버전이 있는 경우 로 이동합니다 https://["NetApp 다운로드: StorageGRID 어플라이언스"^].
+. 어플라이언스에 StorageGRID 어플라이언스 설치 프로그램의 하위 수준 버전이 있는 경우 로 이동합니다 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp 다운로드: StorageGRID 어플라이언스"^].
 +
 NetApp 계정의 사용자 이름과 암호를 사용하여 로그인합니다.
 

@@ -42,12 +42,12 @@ NOTE: 각 작업에 대한 AWS 설명서를 보려면 제목에서 링크를 선
 
 .관련 정보
 * link:../s3/s3-rest-api-supported-operations-and-limitations.html["S3 REST API 구현 세부 정보"]
-* https://["Amazon Simple Storage Service API 참조: 일반 요청 헤더"^]
+* https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html["Amazon Simple Storage Service API 참조: 일반 요청 헤더"^]
 
 
 
 
-== https://["AbortMultipartUpload 를 클릭합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUpload.html["AbortMultipartUpload 를 클릭합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
@@ -63,7 +63,7 @@ link:operations-for-multipart-uploads.html["멀티파트 업로드 작업"]
 
 
 
-== https://["CompleteMultipartUpload를 클릭합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html["CompleteMultipartUpload를 클릭합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
@@ -85,7 +85,7 @@ link:complete-multipart-upload.html["멀티파트 업로드를 완료합니다"]
 
 
 
-== https://["CopyObject 를 선택합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html["CopyObject 를 선택합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
@@ -120,7 +120,7 @@ link:put-object-copy.html["개체 - 복사 를 선택합니다"]
 
 
 
-== https://["CreateBucket"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html["CreateBucket"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
@@ -136,7 +136,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["CreateMultptUpload 를 클릭합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html["CreateMultptUpload 를 클릭합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
@@ -166,7 +166,7 @@ link:initiate-multipart-upload.html["멀티파트 업로드를 시작합니다"]
 
 
 
-== https://["삭제 버킷"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucket.html["삭제 버킷"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -176,20 +176,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["DeleteBucketCors"^]
-
-.Uri 쿼리 매개 변수 및 요청 헤더
-StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
-
-.요청 본문
-없음
-
-.StorageGRID 설명서
-link:operations-on-buckets.html["버킷 작업"]
-
-
-
-== https://["DeleteBucketEncryption"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketCors.html["DeleteBucketCors"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -202,7 +189,20 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["DeleteBucketLifecycle"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketEncryption.html["DeleteBucketEncryption"^]
+
+.Uri 쿼리 매개 변수 및 요청 헤더
+StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
+
+.요청 본문
+없음
+
+.StorageGRID 설명서
+link:operations-on-buckets.html["버킷 작업"]
+
+
+
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketLifecycle.html["DeleteBucketLifecycle"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -217,7 +217,7 @@ StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 �
 
 
 
-== https://["DeleteBuckketPolicy를 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketPolicy.html["DeleteBuckketPolicy를 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -230,7 +230,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["DeleteBuckReplication 을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketReplication.html["DeleteBuckReplication 을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -243,7 +243,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["삭제 BucketTagging"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketTagging.html["삭제 BucketTagging"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -256,7 +256,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["DeleteObject 를 클릭합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html["DeleteObject 를 클릭합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 요청 헤더가 추가되었습니다.
@@ -272,7 +272,7 @@ link:operations-on-objects.html["객체에 대한 작업"]
 
 
 
-== https://["DeleteObjects 를 클릭합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html["DeleteObjects 를 클릭합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 요청 헤더가 추가되었습니다.
@@ -288,7 +288,7 @@ link:operations-on-objects.html["객체에 대한 작업"] (여러 개체 삭제
 
 
 
-== https://["DeleteObjectTagging 을 선택합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html["DeleteObjectTagging 을 선택합니다"^]
 
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
 
@@ -300,7 +300,7 @@ link:operations-on-objects.html["객체에 대한 작업"]
 
 
 
-== https://["GetBuckketAcl"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketAcl.html["GetBuckketAcl"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -313,7 +313,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["GetBuckketCors 를 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketCors.html["GetBuckketCors 를 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -326,7 +326,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["GetBuckketEncryption을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketEncryption.html["GetBuckketEncryption을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -339,7 +339,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["GetBuckLifecycleConfiguration 을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html["GetBuckLifecycleConfiguration 을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -354,7 +354,7 @@ StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 �
 
 
 
-== https://["GetBucketLocation 을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLocation.html["GetBucketLocation 을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -367,7 +367,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["GetBuckNotificationConfiguration 을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html["GetBuckNotificationConfiguration 을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -380,7 +380,7 @@ link:operations-on-buckets.html["버킷 작업"] (버킷 통지 가져오기)
 
 
 
-== https://["GetBuckketPolicy를 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicy.html["GetBuckketPolicy를 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -393,7 +393,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["GetBucketReplication 을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html["GetBucketReplication 을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -406,7 +406,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["GetBucketTagging"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketTagging.html["GetBucketTagging"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -419,7 +419,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["GetBuckketVersioning 을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersioning.html["GetBuckketVersioning 을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -432,7 +432,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["GetObject 를 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html["GetObject 를 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
@@ -466,7 +466,7 @@ link:get-object.html["객체 가져오기"]
 
 
 
-== https://["GetObjectAcl"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAcl.html["GetObjectAcl"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -479,7 +479,7 @@ link:operations-on-objects.html["객체에 대한 작업"]
 
 
 
-== https://["GetObjectLegalHold 를 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectLegalHold.html["GetObjectLegalHold 를 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -492,7 +492,7 @@ link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 �
 
 
 
-== https://["GetObjectLockConfiguration 을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectLockConfiguration.html["GetObjectLockConfiguration 을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -505,7 +505,7 @@ link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 �
 
 
 
-== https://["GetObjectRetention을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectRetention.html["GetObjectRetention을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -518,7 +518,7 @@ link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 �
 
 
 
-== https://["GetObjectTagging"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTagging.html["GetObjectTagging"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -531,7 +531,7 @@ link:operations-on-objects.html["객체에 대한 작업"]
 
 
 
-== https://["머리버킷"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadBucket.html["머리버킷"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -544,7 +544,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["HeadObject 를 선택합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html["HeadObject 를 선택합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
@@ -567,7 +567,7 @@ link:head-object.html["헤드 개체"]
 
 
 
-== https://["ListBucket"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html["ListBucket"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -580,7 +580,7 @@ link:operations-on-the-service.html["서비스 및 GT에 대한 작업;서비스
 
 
 
-== https://["ListMultipartUploads 를 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html["ListMultipartUploads 를 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
@@ -601,7 +601,7 @@ link:list-multipart-uploads.html["다중 파트 업로드 나열"]
 
 
 
-== https://["ListObjects 를 선택합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html["ListObjects 를 선택합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
@@ -621,7 +621,7 @@ link:operations-on-buckets.html["버킷 작업"] (버킷 가져오기)
 
 
 
-== https://["ListObjectsV2"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html["ListObjectsV2"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
@@ -643,7 +643,7 @@ link:operations-on-buckets.html["버킷 작업"] (버킷 가져오기)
 
 
 
-== https://["ListObjectVersions 를 선택합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectVersions.html["ListObjectVersions 를 선택합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
@@ -664,7 +664,7 @@ link:operations-on-buckets.html["버킷 작업"] (버킷 객체 버전 가져오
 
 
 
-== https://["목록 파트"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListParts.html["목록 파트"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청에 다음 추가 매개 변수를 추가합니다.
@@ -682,7 +682,7 @@ link:list-multipart-uploads.html["다중 파트 업로드 나열"]
 
 
 
-== https://["BuckketCors의"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketCors.html["BuckketCors의"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -695,7 +695,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["PutBucketEncryption을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncryption.html["PutBucketEncryption을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -714,7 +714,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["PutBucketLifecycleConfiguration을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html["PutBucketLifecycleConfiguration을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -751,7 +751,7 @@ StorageGRID는 다음과 같은 요청 본문 XML 태그를 지원합니다.
 
 
 
-== https://["PutBucketNotificationConfiguration을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html["PutBucketNotificationConfiguration을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -778,7 +778,7 @@ link:operations-on-buckets.html["버킷 작업"] (버킷 통지)
 
 
 
-== https://["BucketPolicy를 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketPolicy.html["BucketPolicy를 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -788,7 +788,7 @@ StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 �
 
 
 
-== https://["PutBucketReplication을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html["PutBucketReplication을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -808,7 +808,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["BucketTagging"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketTagging.html["BucketTagging"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -821,7 +821,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["PutBucketVersioning을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketVersioning.html["PutBucketVersioning을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -838,7 +838,7 @@ link:operations-on-buckets.html["버킷 작업"]
 
 
 
-== https://["PutObject 를 선택합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html["PutObject 를 선택합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 헤더가 있습니다.
@@ -868,7 +868,7 @@ link:put-object.html["개체 를 넣습니다"]
 
 
 
-== https://["PutObjectLegalHold를 선택합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLegalHold.html["PutObjectLegalHold를 선택합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -881,7 +881,7 @@ link:use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브�
 
 
 
-== https://["PutObjectLockConfiguration 을 참조하십시오"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html["PutObjectLockConfiguration 을 참조하십시오"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -894,7 +894,7 @@ link:use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브�
 
 
 
-== https://["PutObjectRetention"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectRetention.html["PutObjectRetention"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음 추가 헤더가 추가되었습니다.
@@ -910,7 +910,7 @@ link:use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브�
 
 
 
-== https://["PutObjectTagging"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html["PutObjectTagging"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -923,7 +923,7 @@ link:operations-on-objects.html["객체에 대한 작업"]
 
 
 
-== https://["SelectObjectContent 를 선택합니다"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html["SelectObjectContent 를 선택합니다"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 요청할 수 있습니다.
@@ -937,7 +937,7 @@ StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 �
 
 
 
-== https://["업로드 파트"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html["업로드 파트"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.
@@ -962,7 +962,7 @@ link:upload-part.html["부품 업로드"]
 
 
 
-== https://["업로드파트 복사"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html["업로드파트 복사"^]
 
 .Uri 쿼리 매개 변수 및 요청 헤더
 StorageGRID는 모두를 지원합니다 <<common-params,공통 매개 변수 및 머리글>> 이 요청과 함께 다음과 같은 추가 URI 쿼리 매개 변수가 추가되었습니다.

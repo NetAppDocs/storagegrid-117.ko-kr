@@ -27,7 +27,7 @@ summary: 일부 기능은 이 릴리즈에서 제거되었거나 더 이상 사�
 
 SG5600 어플라이언스는 지원이 끝났습니다. 하드웨어 업데이트 옵션은 NetApp 세일즈 담당자에게 문의하십시오.
 
-SG5600 하드웨어에 유지보수 절차를 수행해야 하는 경우 를 사용하십시오 https://["StorageGRID 11.6 지침"^].
+SG5600 하드웨어에 유지보수 절차를 수행해야 하는 경우 를 사용하십시오 https://docs.netapp.com/us-en/storagegrid-116/sg5600/maintaining-sg5600-appliance.html["StorageGRID 11.6 지침"^].
 
 
 

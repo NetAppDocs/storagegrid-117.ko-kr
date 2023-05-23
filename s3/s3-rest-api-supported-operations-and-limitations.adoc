@@ -27,7 +27,7 @@ StorageGRID 시스템은 날짜 값을 허용하는 모든 헤더에 대해 유�
 
 == 공통 요청 헤더
 
-StorageGRID 시스템은 에 정의된 공통 요청 헤더를 지원합니다 https://["Amazon Simple Storage Service API 참조: 일반 요청 헤더"^]한 가지 예외가 있습니다.
+StorageGRID 시스템은 에 정의된 공통 요청 헤더를 지원합니다 https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html["Amazon Simple Storage Service API 참조: 일반 요청 헤더"^]한 가지 예외가 있습니다.
 
 [cols="1a,2a"]
 |===

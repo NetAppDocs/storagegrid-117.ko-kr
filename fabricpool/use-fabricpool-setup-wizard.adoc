@@ -94,7 +94,7 @@ FabricPool 마법사는 StorageGRID 테넌트 1개, 액세스 키 세트 1개 �
 NetApp은 여러 클러스터의 로컬 계층에 단일 클라우드 계층을 연결하는 것을 권장하지 않습니다.
 
 
-NOTE: NetApp MetroCluster™ 및 FabricPool Mirror와 함께 StorageGRID를 사용하는 모범 사례는 를 참조하십시오 https://["TR-4598: ONTAP에서의 FabricPool 모범 사례"^].
+NOTE: NetApp MetroCluster™ 및 FabricPool Mirror와 함께 StorageGRID를 사용하는 모범 사례는 를 참조하십시오 https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598: ONTAP에서의 FabricPool 모범 사례"^].
 
 
 

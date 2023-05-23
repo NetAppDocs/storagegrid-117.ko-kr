@@ -20,7 +20,7 @@ link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 �
 
 link:../ilm/index.html["ILM을 사용하여 개체를 관리합니다"]
 
-https://["NetApp 기술 자료: StorageGRID 11.5에서 레거시 준수 버킷을 관리하는 방법"^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["NetApp 기술 자료: StorageGRID 11.5에서 레거시 준수 버킷을 관리하는 방법"^]
 
 이 작업을 완료하려면 S3:GetBucketCompliance 권한이 있거나 계정 루트가 됩니다.
 

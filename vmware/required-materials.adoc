@@ -37,7 +37,7 @@ StorageGRID 설치 아카이브
  a| 
 VMware 소프트웨어 및 설명서
  a| 
-설치 중에 VMware vSphere Web Client를 사용하여 가상 머신에 가상 그리드 노드를 구축합니다. 지원되는 버전은 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
+설치 중에 VMware vSphere Web Client를 사용하여 가상 머신에 가상 그리드 노드를 구축합니다. 지원되는 버전은 를 참조하십시오 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴"^].
 
 
 

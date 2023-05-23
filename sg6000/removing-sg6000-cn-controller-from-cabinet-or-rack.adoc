@@ -48,7 +48,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG6060 랙 고정 나사]
 . 옵션: 캐비닛이나 랙에서 컨트롤러를 완전히 분리하는 경우 레일 키트의 지침에 따라 레일에서 컨트롤러를 분리합니다.
 
 
-부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
+부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://mysupport.netapp.com/site/info/rma["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
 
 .관련 정보
 link:removing-sg6000-cn-controller-cover.html["SG6000-CN 컨트롤러 덮개를 분리합니다"]

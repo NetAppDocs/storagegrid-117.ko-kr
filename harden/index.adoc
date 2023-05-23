@@ -17,7 +17,7 @@ summary: 시스템 강화는 StorageGRID 시스템에서 가능한 한 많은 �
 
 StorageGRID를 설치 및 구성할 때 이 지침을 사용하여 정보 시스템의 기밀성, 무결성 및 가용성에 대해 규정된 모든 보안 목표를 충족할 수 있습니다.
 
-StorageGRID는 을 따릅니다 https://["NetApp 취약성 처리 정책"^]. 보고된 취약점은 제품 보안 사고 대응 프로세스에 따라 확인 및 해결됩니다.
+StorageGRID는 을 따릅니다 https://security.netapp.com/policy/["NetApp 취약성 처리 정책"^]. 보고된 취약점은 제품 보안 사고 대응 프로세스에 따라 확인 및 해결됩니다.
 
 
 

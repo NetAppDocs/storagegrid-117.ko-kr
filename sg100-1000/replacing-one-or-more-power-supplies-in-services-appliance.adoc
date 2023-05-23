@@ -67,4 +67,4 @@ image::../media/sg6000_cn_insert_power_supply.gif[SG6000-CN으로 전원 공급 
 . link:../installconfig/connecting-power-cords-and-applying-power-sg100-and-sg1000.html["전원 코드를 교체한 장치에 연결하고 전원을 공급합니다"].
 
 
-부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
+부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://mysupport.netapp.com/site/info/rma["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.

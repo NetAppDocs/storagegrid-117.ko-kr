@@ -41,7 +41,7 @@ TIP: 업데이트 경로가 표시되지 않으면 브라우저가 NetApp Suppor
 . 파일 선택 * 단계의 경우 업데이트 경로를 검토하십시오.
 . 파일 다운로드 섹션에서 각 * 다운로드 * 링크를 선택하여 NetApp Support 사이트에서 필요한 파일을 다운로드합니다.
 +
-업데이트 경로가 표시되지 않으면 로 이동합니다 https://["NetApp 다운로드: StorageGRID"^] 새 버전이나 핫픽스를 사용할 수 있는지 확인하고 필요한 파일을 다운로드합니다.
+업데이트 경로가 표시되지 않으면 로 이동합니다 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 다운로드: StorageGRID"^] 새 버전이나 핫픽스를 사용할 수 있는지 확인하고 필요한 파일을 다운로드합니다.
 
 +
 
@@ -74,7 +74,7 @@ NOTE: 모든 Linux 호스트에 RPM 또는 DEB 패키지를 다운로드하여 �
 IMPORTANT: 복구 패키지 파일은 StorageGRID 시스템에서 데이터를 가져오는 데 사용할 수 있는 암호화 키와 암호가 포함되어 있으므로 보안을 유지해야 합니다.
 
 . 사전 점검 실행 * 을 선택하고 사전 점검을 완료할 때까지 기다립니다.
-. 보고된 각 사전 점검에 대한 세부 정보를 검토하고 보고된 오류를 해결합니다. 를 참조하십시오 https://["StorageGRID 소프트웨어 업그레이드 해결 가이드"^] StorageGRID 11.7 릴리스.
+. 보고된 각 사전 점검에 대한 세부 정보를 검토하고 보고된 오류를 해결합니다. 를 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/StorageGRID_software_upgrade_resolution_guide["StorageGRID 소프트웨어 업그레이드 해결 가이드"^] StorageGRID 11.7 릴리스.
 +
 시스템을 업그레이드하기 전에 모든 precheck_errors_를 해결해야 합니다. 그러나 업그레이드하기 전에 precheck_warnings_를 처리할 필요는 없습니다.
 

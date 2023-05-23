@@ -72,7 +72,7 @@ StorageGRID 시스템을 처음 설치할 때 암호가 생성되고 문서화�
  a| 
 플랫폼 공급업체의 웹 사이트에서 설명서를 참조하십시오.
 
-현재 지원되는 플랫폼 버전은 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
+현재 지원되는 플랫폼 버전은 를 참조하십시오 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴"^].
 
 |===
 
@@ -86,7 +86,7 @@ StorageGRID 시스템을 처음 설치할 때 암호가 생성되고 문서화�
 
 .단계
 . 현재 설치된 소프트웨어 버전을 확인합니다. 그리드 관리자 상단에서 도움말 아이콘을 선택하고 * 정보 * 를 선택합니다.
-. 로 이동합니다 https://["StorageGRID용 NetApp 다운로드 페이지"^].
+. 로 이동합니다 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["StorageGRID용 NetApp 다운로드 페이지"^].
 . 그리드에서 현재 실행 중인 StorageGRID 버전을 선택합니다.
 +
 StorageGRID 소프트웨어 버전의 형식은 다음과 같습니다. `11.x.y`.

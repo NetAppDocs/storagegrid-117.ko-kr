@@ -264,5 +264,5 @@ NOTE: 를 지정할 경우 `x-amz-object-lock-mode`, 또한 을 지정해야 합
 .관련 정보
 * link:../ilm/managing-objects-with-s3-object-lock.html["S3 오브젝트 잠금으로 오브젝트 관리"]
 * link:../tenant/using-s3-object-lock.html["S3 오브젝트 잠금을 사용하여 오브젝트를 보존합니다"]
-* https://["Amazon Simple Storage Service 사용자 가이드: S3 Object Lock 사용"^]
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["Amazon Simple Storage Service 사용자 가이드: S3 Object Lock 사용"^]
 

@@ -14,7 +14,7 @@ summary: '현재 SANtricity OS가 08.42.20.00\(11.42\)보다 오래된 스토리
 현재 08.42.20.00(11.42) 이전의 SANtricity OS를 사용하는 스토리지 컨트롤러의 경우, 업그레이드를 적용하려면 유지보수 모드 절차를 사용해야 합니다.
 
 .시작하기 전에
-* 을(를) 참조했습니다 https://["NetApp 상호 운용성 매트릭스 툴(IMT)"^] 업그레이드에 사용 중인 SANtricity OS 버전이 어플라이언스와 호환되는지 확인합니다.
+* 을(를) 참조했습니다 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴(IMT)"^] 업그레이드에 사용 중인 SANtricity OS 버전이 어플라이언스와 호환되는지 확인합니다.
 * E5500SG 컨트롤러를 에 장착해야 합니다 link:../maintain/placing-appliance-into-maintenance-mode.html["유지보수 모드"]E2800 컨트롤러와의 연결을 중단합니다.
 +
 

@@ -33,12 +33,12 @@ ILM 규칙 및 ILM 정책을 설계하고 구현하려면 신중한 계획이 �
 
 자세한 내용은 다음 비디오를 참조하십시오.
 
-* https://["비디오: StorageGRID 11.7의 정보 수명 주기 관리 규칙"^].
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c["비디오: StorageGRID 11.7의 정보 수명 주기 관리 규칙"^].
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c]
 image::../media/video-screenshot-ilm-rules-117.png[비디오: StorageGRID 11.7의 정보 수명 주기 관리 규칙]
 
-* https://["비디오: StorageGRID 11.7의 정보 수명 주기 관리 정책"^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0009ebe1-3665-4cdc-a101-afbd009a0466["비디오: StorageGRID 11.7의 정보 수명 주기 관리 정책"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0009ebe1-3665-4cdc-a101-afbd009a0466]
 image::../media/video-screenshot-ilm-policies-117.png[비디오: StorageGRID 11.7의 정보 수명 주기 관리 정책]

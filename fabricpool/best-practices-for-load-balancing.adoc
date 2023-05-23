@@ -56,6 +56,6 @@ CAUTION: ONTAP와 StorageGRID 간의 연결을 보호하는 데 사용되는 인
 * 공개적으로 서명된 CA 인증서를 사용합니다. CA에서 서명한 인증서를 사용하는 경우 그리드 관리 API를 사용하여 인증서 회전을 자동화할 수 있습니다. 따라서 만료 임박한 인증서를 중단 없이 교체할 수 있습니다.
 * 자체 서명된 StorageGRID 인증서를 생성했으며 인증서가 곧 만료될 경우 기존 인증서가 만료되기 전에 StorageGRID 및 ONTAP에서 수동으로 인증서를 교체해야 합니다. 자체 서명된 인증서가 이미 만료된 경우 ONTAP에서 인증서 유효성 검사를 해제하면 액세스 손실이 방지됩니다.
 +
-을 참조하십시오 https://["NetApp 기술 자료: 기존 ONTAP FabricPool 배포에서 새로운 StorageGRID 자체 서명 서버 인증서를 구성하는 방법"^] 를 참조하십시오.
+을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_configure_a_new_StorageGRID_self-signed_server_certificate_on_an_existing_ONTAP_FabricPool_deployment["NetApp 기술 자료: 기존 ONTAP FabricPool 배포에서 새로운 StorageGRID 자체 서명 서버 인증서를 구성하는 방법"^] 를 참조하십시오.
 
 

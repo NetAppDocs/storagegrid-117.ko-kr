@@ -20,7 +20,7 @@ StorageGRID 노드가 Linux 호스트에 배포된 경우 업그레이드를 시
 그리드 관리자에서 StorageGRID 업그레이드를 수행할 때 업그레이드 아카이브와 필요한 핫픽스를 첫 번째 단계로 다운로드하라는 메시지가 표시됩니다. 그러나 Linux 호스트를 업그레이드하기 위해 파일을 다운로드해야 하는 경우 필요한 모든 파일을 미리 다운로드하여 시간을 절약할 수 있습니다.
 
 .단계
-. 로 이동합니다 https://["NetApp 다운로드: StorageGRID"^].
+. 로 이동합니다 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 다운로드: StorageGRID"^].
 . 최신 릴리스를 다운로드하려면 버튼을 선택하거나 드롭다운 메뉴에서 다른 버전을 선택하고 * GO * 를 선택합니다.
 +
 StorageGRID 소프트웨어 버전의 형식은 11._x. y _ 입니다. StorageGRID 핫픽스의 형식은 11._x.x.x.z _ 입니다.
@@ -48,7 +48,7 @@ StorageGRID 소프트웨어 버전의 형식은 11._x. y _ 입니다. StorageGRI
 
 . 필요한 핫픽스로 인해 주의/MustRead 고지에 동의해야 하는 경우 핫픽스를 다운로드하십시오.
 +
-.. 로 돌아갑니다 https://["NetApp 다운로드: StorageGRID"^].
+.. 로 돌아갑니다 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 다운로드: StorageGRID"^].
 .. 드롭다운에서 핫픽스 번호를 선택합니다.
 .. 주의 통지 및 EULA에 다시 동의합니다.
 .. 핫픽스와 추가 정보를 다운로드하여 저장합니다.

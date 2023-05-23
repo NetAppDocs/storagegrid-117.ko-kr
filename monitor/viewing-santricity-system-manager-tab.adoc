@@ -44,7 +44,7 @@ NOTE: SANtricity 시스템 관리자 링크를 사용하여 새 브라우저 창
 
 스토리지 어레이 레벨 성능 및 용량 사용량에 대한 세부 정보를 보려면 각 그래프 위에 커서를 놓습니다.
 
-SANtricity 시스템 관리자 탭에서 액세스할 수 있는 정보를 보는 방법에 대한 자세한 내용은 를 참조하십시오 https://["NetApp E-Series 및 SANtricity 문서"^].
+SANtricity 시스템 관리자 탭에서 액세스할 수 있는 정보를 보는 방법에 대한 자세한 내용은 를 참조하십시오 https://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E-Series 및 SANtricity 문서"^].
 
 .관련 정보
 * link:../sg6000/index.html["SG6000 어플라이언스를 유지보수하십시오"]

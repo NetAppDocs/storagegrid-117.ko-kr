@@ -31,9 +31,9 @@ NOTE: StorageGRID 시스템의 각 관리 노드에 대해 엔터프라이즈 �
 == Azure AD에 액세스합니다
 
 .단계
-. 에 로그인합니다 https://["Azure 포털"^].
-. 로 이동합니다 https://["Azure Active Directory를 클릭합니다"^].
-. 를 선택합니다 https://["엔터프라이즈 애플리케이션"^].
+. 에 로그인합니다 https://portal.azure.com["Azure 포털"^].
+. 로 이동합니다 https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade["Azure Active Directory를 클릭합니다"^].
+. 를 선택합니다 https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/Overview/menuId/["엔터프라이즈 애플리케이션"^].
 
 
 

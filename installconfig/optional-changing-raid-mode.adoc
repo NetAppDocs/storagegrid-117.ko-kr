@@ -78,4 +78,4 @@ StorageGRID 어플라이언스 설치 관리자 홈 페이지가 나타납니다
 --
 ====
 .관련 정보
-http://["NetApp E-Series 시스템 문서 사이트"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E-Series 시스템 문서 사이트"^]

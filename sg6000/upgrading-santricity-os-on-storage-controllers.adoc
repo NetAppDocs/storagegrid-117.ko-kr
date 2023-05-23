@@ -13,9 +13,9 @@ summary: 스토리지 컨트롤러가 최적의 상태로 작동하도록 하려
 [role="lead"]
 스토리지 컨트롤러가 최적의 상태로 작동하도록 하려면 StorageGRID 어플라이언스에 적합한 SANtricity OS의 최신 유지 관리 릴리즈로 업그레이드해야 합니다.
 
-을 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴(IMT)"^] 사용할 버전을 확인합니다.
+을 참조하십시오 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴(IMT)"^] 사용할 버전을 확인합니다.
 
-에서 새 SANtricity OS 소프트웨어 파일을 다운로드합니다 https://["NetApp 다운로드: StorageGRID 어플라이언스"^].
+에서 새 SANtricity OS 소프트웨어 파일을 다운로드합니다 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp 다운로드: StorageGRID 어플라이언스"^].
 
 현재 설치된 SANtricity OS 버전에 따라 다음 절차 중 하나를 사용하십시오.
 

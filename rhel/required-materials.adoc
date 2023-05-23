@@ -57,4 +57,4 @@ StorageGRID 설명서
 
 |===
 .관련 정보
-https://["NetApp 상호 운용성 매트릭스 툴"^]
+https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴"^]

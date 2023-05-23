@@ -391,7 +391,7 @@ image::../media/nodes_menu.png[어플라이언스 노드가 그리드에 다시 
 . SANtricity 시스템 관리자에서 새 컨트롤러가 최적화되었는지 확인하고 지원 데이터를 수집합니다.
 
 
-부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
+부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://mysupport.netapp.com/site/info/rma["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
 
 .관련 정보
-http://["NetApp E-Series 시스템 문서 사이트"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E-Series 시스템 문서 사이트"^]

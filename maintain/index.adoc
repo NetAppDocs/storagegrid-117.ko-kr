@@ -20,7 +20,7 @@ summary: 다음 지침에 따라 StorageGRID 시스템을 유지보수하고 장
 이 지침에서는 소프트웨어 핫픽스 적용, 그리드 노드 복구, 장애가 발생한 사이트 복구, 그리드 노드 또는 전체 사이트 파기, 네트워크 유지보수 수행, 호스트 레벨 및 미들웨어 유지보수 절차 수행, 그리드 노드 절차 수행 방법에 대해 설명합니다.
 
 
-NOTE: 이 지침에서 "'Linux'는 Red Hat ® Enterprise Linux ®, Ubuntu ®, CentOS 또는 Debian ® 배포를 의미합니다. 를 사용합니다 https://["NetApp 상호 운용성 매트릭스 툴"^] 를 클릭하여 지원되는 버전 목록을 가져옵니다.
+NOTE: 이 지침에서 "'Linux'는 Red Hat ® Enterprise Linux ®, Ubuntu ®, CentOS 또는 Debian ® 배포를 의미합니다. 를 사용합니다 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴"^] 를 클릭하여 지원되는 버전 목록을 가져옵니다.
 
 
 

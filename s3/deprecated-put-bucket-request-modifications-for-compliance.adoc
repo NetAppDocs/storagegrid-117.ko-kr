@@ -20,7 +20,7 @@ link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 �
 
 link:../ilm/index.html["ILM을 사용하여 개체를 관리합니다"]
 
-https://["NetApp 기술 자료: StorageGRID 11.5에서 레거시 준수 버킷을 관리하는 방법"^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["NetApp 기술 자료: StorageGRID 11.5에서 레거시 준수 버킷을 관리하는 방법"^]
 
 Compliance가 설정된 새 버킷을 더 이상 생성할 수 없습니다. 새 준수 버킷을 생성하기 위해 준수 준수를 위해 Put Bucket 요청 수정을 사용하려는 경우 다음 오류 메시지가 반환됩니다.
 

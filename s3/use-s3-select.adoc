@@ -16,7 +16,7 @@ StorageGRID는 에 대해 다음과 같은 Amazon S3 Select 절, 데이터 유�
 
 NOTE: 목록에 없는 항목은 지원되지 않습니다.
 
-구문은 을 참조하십시오 link:select-object-content.html["SelectObjectContent 를 선택합니다"]. S3 Select에 대한 자세한 내용은 를 참조하십시오 https://["S3 Select용 AWS 문서"^].
+구문은 을 참조하십시오 link:select-object-content.html["SelectObjectContent 를 선택합니다"]. S3 Select에 대한 자세한 내용은 를 참조하십시오 https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html["S3 Select용 AWS 문서"^].
 
 S3 Select가 활성화된 테넌트 계정만 SelectObjectContent 쿼리를 실행할 수 있습니다. 를 참조하십시오 link:../admin/manage-s3-select-for-tenant-accounts.html["S3 Select 사용에 대한 고려 사항 및 요구 사항"].
 

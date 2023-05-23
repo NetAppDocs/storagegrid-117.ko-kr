@@ -284,4 +284,4 @@ E5500SG 컨트롤러(컴퓨팅 컨트롤러)
 
 |===
 .관련 정보
-http://["NetApp E-Series 시스템 문서 사이트"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E-Series 시스템 문서 사이트"^]

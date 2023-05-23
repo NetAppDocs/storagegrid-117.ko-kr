@@ -42,7 +42,7 @@ NOTE: 를 누릅니다 link:enabling-s3-object-lock-globally.html["전역 S3 오
 
 --
 ====
-* 선택적으로 비디오를 시청했습니다. https://["비디오: StorageGRID 11.7의 정보 수명 주기 관리 정책"^]
+* 선택적으로 비디오를 시청했습니다. https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0009ebe1-3665-4cdc-a101-afbd009a0466["비디오: StorageGRID 11.7의 정보 수명 주기 관리 정책"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0009ebe1-3665-4cdc-a101-afbd009a0466]
 image::../media/video-screenshot-ilm-policies-117.png[비디오: StorageGRID 11.7의 정보 수명 주기 관리 정책]

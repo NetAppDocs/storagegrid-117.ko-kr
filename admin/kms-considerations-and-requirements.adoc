@@ -19,7 +19,7 @@ summary: '외부 키 관리 서버 \(KMS\)를 구성하기 전에 고려 사항 
 
 StorageGRID는 KMIP 버전 1.4를 지원합니다.
 
-http://["키 관리 상호 운용성 프로토콜 사양 버전 1.4"^]
+http://docs.oasis-open.org/kmip/spec/v1.4/os/kmip-spec-v1.4-os.html["키 관리 상호 운용성 프로토콜 사양 버전 1.4"^]
 
 어플라이언스 노드와 구성된 KMS 간의 통신은 보안 TLS 연결을 사용합니다. StorageGRID는 KMIP에 대해 다음 TLS v1.2 암호를 지원합니다.
 

@@ -6,4 +6,4 @@ Active IQ는 NetApp 설치 기반에서 예측 분석 및 커뮤니티 지혜를
 
 NetApp Support 사이트에서 Active IQ 대시보드 및 기능을 사용하려면 AutoSupport를 활성화해야 합니다.
 
-https://["Active IQ 디지털 자문 문서"^]
+https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 디지털 자문 문서"^]

@@ -13,4 +13,4 @@ summary: 새로운 기능, 제거되거나 사용되지 않는 기능, 해결된
 [role="lead"]
 새로운 기능, 제거되거나 사용되지 않는 기능, 해결된 문제 및 알려진 문제에 대한 릴리스 관련 정보를 얻습니다.
 
-NetApp Support 사이트 에 로그인합니다 https://["PDF 파일을 보거나 다운로드합니다"^] StorageGRID 11.7 릴리스 정보 포함.
+NetApp Support 사이트 에 로그인합니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2884438["PDF 파일을 보거나 다운로드합니다"^] StorageGRID 11.7 릴리스 정보 포함.

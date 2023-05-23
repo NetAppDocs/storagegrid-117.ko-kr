@@ -104,7 +104,7 @@ StorageGRID 시스템은 네 가지 유형의 그리드 노드를 사용합니�
 * link:../ubuntu/index.html["Ubuntu 또는 Debian을 설치합니다"]
 
 
-를 사용합니다 https://["NetApp 상호 운용성 매트릭스 툴(IMT)"^] 를 클릭하여 지원되는 버전 목록을 가져옵니다.
+를 사용합니다 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴(IMT)"^] 를 클릭하여 지원되는 버전 목록을 가져옵니다.
 
 
 
@@ -132,7 +132,7 @@ StorageGRID 하드웨어 어플라이언스는 StorageGRID 시스템에서 사�
 
 자세한 내용은 다음을 참조하십시오.
 
-* https://["NetApp Hardware Universe를 참조하십시오"^]
+* https://hwu.netapp.com["NetApp Hardware Universe를 참조하십시오"^]
 * link:../installconfig/hardware-description-sg6100.html["SGF6112 스토리지 어플라이언스"]
 * link:../installconfig/hardware-description-sg100-and-1000.html["SG100 및 SG1000 서비스 어플라이언스"]
 * link:../installconfig/hardware-description-sg6000.html["SG6000 스토리지 어플라이언스"]

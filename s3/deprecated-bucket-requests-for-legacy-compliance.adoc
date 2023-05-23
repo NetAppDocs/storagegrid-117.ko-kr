@@ -23,7 +23,7 @@ StorageGRID S3 REST API를 사용하여 레거시 규정 준수 기능을 사용
 
 * link:use-s3-api-for-s3-object-lock.html["S3 REST API를 사용하여 S3 오브젝트 잠금을 구성합니다"]
 * link:../ilm/index.html["ILM을 사용하여 개체를 관리합니다"]
-* https://["NetApp 기술 자료: StorageGRID 11.5에서 레거시 준수 버킷을 관리하는 방법"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["NetApp 기술 자료: StorageGRID 11.5에서 레거시 준수 버킷을 관리하는 방법"^]
 
 
 더 이상 사용되지 않는 규정 준수 요청:

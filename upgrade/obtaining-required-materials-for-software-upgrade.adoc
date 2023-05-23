@@ -56,8 +56,8 @@ Linux 호스트에 노드가 구축된 경우 반드시 다음을 수행해야 �
 StorageGRID 설명서
  a| 
 * link:../release-notes/index.html["릴리스 정보"] StorageGRID 11.7의 경우(로그인 필요). 업그레이드를 시작하기 전에 이 내용을 주의 깊게 읽으십시오.
-* https://["StorageGRID 소프트웨어 업그레이드 해결 가이드"^] 업그레이드할 주요 버전의 경우(로그인 필요)
-* 기타 https://["StorageGRID 11.7 문서"^]필요 시.
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/StorageGRID_software_upgrade_resolution_guide["StorageGRID 소프트웨어 업그레이드 해결 가이드"^] 업그레이드할 주요 버전의 경우(로그인 필요)
+* 기타 https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID 11.7 문서"^]필요 시.
 
 
 |===

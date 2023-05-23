@@ -32,10 +32,10 @@ NetApp ONTAP 소프트웨어를 사용하는 경우 NetApp FabricPool를 사용�
 * 에 대한 FabricPool 모범 사례를 검토하십시오 link:best-practices-for-high-availability-groups.html["HA 그룹"], link:best-practices-for-load-balancing.html["로드 밸런싱"], link:best-practices-ilm.html["ILM을 참조하십시오"], 및 link:other-best-practices-for-storagegrid-and-fabricpool.html["자세히"].
 * ONTAP 및 FabricPool의 사용 및 구성에 대한 자세한 내용을 제공하는 다음 추가 리소스를 검토하십시오.
 +
-https://["TR-4598: ONTAP에서의 FabricPool 모범 사례"^]
+https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598: ONTAP에서의 FabricPool 모범 사례"^]
 
 +
-https://["ONTAP 9: System Manager를 이용한 FabricPool 계층 관리 개요"^]
+https://docs.netapp.com/us-en/ontap/concept_cloud_overview.html["ONTAP 9: System Manager를 이용한 FabricPool 계층 관리 개요"^]
 
 
 

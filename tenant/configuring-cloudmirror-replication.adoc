@@ -31,7 +31,7 @@ NOTE: CloudMirror 복제는 교차 그리드 복제 기능과의 중요한 유�
 
 NOTE: S3 오브젝트 잠금이 활성화된 소스 또는 대상 버킷에는 복제가 지원되지 않습니다.
 
-버킷 복제 및 구성 방법에 대한 일반 정보는 을 참조하십시오 https://["Amazon S3(Simple Storage Service) 문서: 오브젝트 복제"^]. StorageGRID가 GetBuckketReplication, DeleteBuckReplication 및 PutBuckReplication을 구현하는 방법에 대한 자세한 내용은 을 참조하십시오 link:../s3/operations-on-buckets.html["버킷 작업"].
+버킷 복제 및 구성 방법에 대한 일반 정보는 을 참조하십시오 https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html["Amazon S3(Simple Storage Service) 문서: 오브젝트 복제"^]. StorageGRID가 GetBuckketReplication, DeleteBuckReplication 및 PutBuckReplication을 구현하는 방법에 대한 자세한 내용은 을 참조하십시오 link:../s3/operations-on-buckets.html["버킷 작업"].
 
 객체가 포함된 버킷에서 CloudMirror 복제를 활성화하면 버킷에 추가된 새 객체가 복제되지만 버킷의 기존 객체는 복제되지 않습니다. 복제를 트리거하려면 기존 객체를 업데이트해야 합니다.
 

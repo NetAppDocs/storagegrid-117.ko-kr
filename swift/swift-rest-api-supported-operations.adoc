@@ -31,4 +31,4 @@ StorageGRID 시스템은 OpenStack Swift API에서 대부분의 작업을 지원
 StorageGRID 시스템은 OpenStack Swift 오브젝트 스토리지 API v1에 정의된 대로 지원되는 작업에 대해 모든 공통 헤더를 구현합니다.
 
 .관련 정보
-http://["OpenStack: 오브젝트 스토리지 API"^]
+http://docs.openstack.org/developer/swift/api/object_api_v1_overview.html["OpenStack: 오브젝트 스토리지 API"^]

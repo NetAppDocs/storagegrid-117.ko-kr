@@ -173,7 +173,7 @@ arn:aws:iam::account_id:federated-group/group_name
 * 별표(*)를 와일드카드로 사용하여 개체 키 안에 0개 이상의 문자를 일치시킬 수 있습니다.
 * 개체 키에 지정할 수 있는 국제 문자는 JSON UTF-8 또는 JSON\u 이스케이프 시퀀스를 사용하여 인코딩해야 합니다. 퍼센트 인코딩은 지원되지 않습니다.
 +
-https://["RFC 2141 URN 구문"^]
+https://www.ietf.org/rfc/rfc2141.txt["RFC 2141 URN 구문"^]
 
 +
 Put Bucket 정책 작업의 HTTP 요청 본문은 charset=UTF-8로 인코딩되어야 합니다.

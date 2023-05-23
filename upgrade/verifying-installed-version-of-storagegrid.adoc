@@ -19,9 +19,9 @@ StorageGRID 11.7로 업그레이드하기 전에 그리드에 StorageGRID 11.6�
 가능한 업그레이드 경로 하나가 에 표시됩니다 <<예: 버전 11.3.0.8에서 StorageGRID 11.6으로 업그레이드합니다,예>>.
 
 
-IMPORTANT: 다음 버전으로 업그레이드하기 전에 각 StorageGRID 버전에 최신 핫픽스를 적용하고 설치하는 각 새 버전에 최신 핫픽스를 적용할 것을 적극 권장합니다. 경우에 따라 데이터 손실 위험을 방지하기 위해 핫픽스를 적용해야 합니다. 을 참조하십시오 https://["NetApp 다운로드: StorageGRID"^] 각 핫픽스에 대한 릴리스 노트를 참조하십시오.
+IMPORTANT: 다음 버전으로 업그레이드하기 전에 각 StorageGRID 버전에 최신 핫픽스를 적용하고 설치하는 각 새 버전에 최신 핫픽스를 적용할 것을 적극 권장합니다. 경우에 따라 데이터 손실 위험을 방지하기 위해 핫픽스를 적용해야 합니다. 을 참조하십시오 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 다운로드: StorageGRID"^] 각 핫픽스에 대한 릴리스 노트를 참조하십시오.
 
-한 단계에서 11.3.0.13+에서 11.4.0._y_로, 11.4.0.7+에서 11.5.0._y_로 업데이트하는 스크립트를 실행할 수 있습니다. 을 참조하십시오 https://["NetApp 기술 자료: StorageGRID에 대한 주요 업그레이드 및 핫픽스 스크립트를 모두 실행하는 방법"^].
+한 단계에서 11.3.0.13+에서 11.4.0._y_로, 11.4.0.7+에서 11.5.0._y_로 업데이트하는 스크립트를 실행할 수 있습니다. 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_run_combined_major_upgrade_and_hotfix_script_for_StorageGRID["NetApp 기술 자료: StorageGRID에 대한 주요 업그레이드 및 핫픽스 스크립트를 모두 실행하는 방법"^].
 
 .단계
 . 를 사용하여 Grid Manager에 로그인합니다 link:../admin/web-browser-requirements.html["지원되는 웹 브라우저"].
@@ -35,7 +35,7 @@ StorageGRID 11.6._x.y_version 번호:
 ** 핫픽스 * 가 적용된 경우 _y_값(예: 11.6.0.1)이 있습니다.
 
 
-. 버전 * 이 11.6._x.y_가 아니면 로 이동합니다 https://["NetApp 다운로드: StorageGRID"^] 각 릴리스에 대한 최신 핫픽스를 포함하여 이전 릴리스마다 파일을 다운로드합니다.
+. 버전 * 이 11.6._x.y_가 아니면 로 이동합니다 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 다운로드: StorageGRID"^] 각 릴리스에 대한 최신 핫픽스를 포함하여 이전 릴리스마다 파일을 다운로드합니다.
 . 다운로드한 각 릴리스에 대한 업그레이드 지침을 확인합니다. 그런 다음 해당 릴리스에 대해 소프트웨어 업그레이드 절차를 수행하고 해당 릴리스에 대한 최신 핫픽스를 적용합니다(적극 권장).
 +
 를 참조하십시오 link:../maintain/storagegrid-hotfix-procedure.html["StorageGRID 핫픽스 절차"].
@@ -49,7 +49,7 @@ StorageGRID 11.6._x.y_version 번호:
 다음 예는 StorageGRID 11.7 업그레이드를 준비하는 StorageGRID 버전 11.3.0.8에서 버전 11.6으로 업그레이드하는 단계를 보여 줍니다.
 
 
-IMPORTANT: 선택적으로 스크립트를 실행하여 2단계와 3단계를 결합하고(11.3.0.13+에서 11.4.0._y_) 4단계와 5단계를 결합할 수 있습니다(11.4.0.7+에서 11.5.0._y_). 을 참조하십시오 https://["NetApp 기술 자료: StorageGRID에 대한 주요 업그레이드 및 핫픽스 스크립트를 모두 실행하는 방법"^].
+IMPORTANT: 선택적으로 스크립트를 실행하여 2단계와 3단계를 결합하고(11.3.0.13+에서 11.4.0._y_) 4단계와 5단계를 결합할 수 있습니다(11.4.0.7+에서 11.5.0._y_). 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_run_combined_major_upgrade_and_hotfix_script_for_StorageGRID["NetApp 기술 자료: StorageGRID에 대한 주요 업그레이드 및 핫픽스 스크립트를 모두 실행하는 방법"^].
 
 시스템을 업그레이드할 수 있도록 다음 순서로 소프트웨어를 다운로드하여 설치합니다.
 

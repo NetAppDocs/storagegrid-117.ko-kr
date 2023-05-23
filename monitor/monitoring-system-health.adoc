@@ -117,7 +117,7 @@ image:../media/icon_alert_green_checkmark.png["아이콘 경고 녹색 확인 �
 
 * 해결된 경고 *: 해결된 경고 기록을 검색하고 볼 수 있습니다.
 
-선택적으로 비디오를 시청했습니다. https://["비디오: StorageGRID 11.7에 대한 경고 개요"^]
+선택적으로 비디오를 시청했습니다. https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b["비디오: StorageGRID 11.7에 대한 경고 개요"^]
 
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b]
 image::../media/video-screenshot-alert-overview-117.png[비디오: StorageGRID 11.7에 대한 경고 개요]

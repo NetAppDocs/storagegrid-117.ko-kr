@@ -32,6 +32,6 @@ summary: 다음 지침을 사용하여 시스템 운영을 중단하지 않고 S
 노드를 추가하는 단계는 StorageGRID 어플라이언스를 추가하거나 VMware 또는 Linux를 실행하는 호스트를 추가하는지에 따라서도 달라집니다.
 
 
-NOTE: "'Linux'는 Red Hat ® Enterprise Linux ®, Ubuntu ®, CentOS 또는 Debian ® 배포를 의미합니다. 를 사용합니다 https://["NetApp 상호 운용성 매트릭스 툴(IMT)"^] 를 클릭하여 지원되는 버전 목록을 가져옵니다.
+NOTE: "'Linux'는 Red Hat ® Enterprise Linux ®, Ubuntu ®, CentOS 또는 Debian ® 배포를 의미합니다. 를 사용합니다 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴(IMT)"^] 를 클릭하여 지원되는 버전 목록을 가져옵니다.
 
 image::../media/expansion_workflow.png[확장 프로세스의 개요를 보여 주는 흐름도]

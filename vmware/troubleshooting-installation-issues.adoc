@@ -22,7 +22,7 @@ StorageGRID 시스템을 설치하는 동안 문제가 발생하면 설치 로�
 .관련 정보
 로그 파일에 액세스하는 방법은 을 참조하십시오 link:../monitor/logs-files-reference.html["로그 파일 참조"].
 
-추가 도움이 필요한 경우 에 문의하십시오 https://["NetApp 지원"^].
+추가 도움이 필요한 경우 에 문의하십시오 https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"^].
 
 
 

@@ -40,6 +40,6 @@ CAUTION: 각 ESX 호스트에서 NTP(네트워크 시간 프로토콜)를 적절
 
 StorageGRID 그리드 노드를 구축하기 전에 VMware vSphere 및 vCenter를 설치하고 구성해야 합니다.
 
-지원되는 VMware vSphere 하이퍼바이저 버전과 VMware vCenter Server 소프트웨어 버전은 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 VMware vSphere 하이퍼바이저 버전과 VMware vCenter Server 소프트웨어 버전은 를 참조하십시오 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴"^].
 
 이러한 VMware 제품을 설치하는 데 필요한 단계는 VMware 설명서를 참조하십시오.

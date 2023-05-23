@@ -17,7 +17,7 @@ summary: 핫픽스나 새 버전의 StorageGRID 소프트웨어를 사용할 수
 StorageGRID 핫픽스에는 기능 또는 패치 릴리스 외부에서 사용할 수 있는 소프트웨어 변경 사항이 포함되어 있습니다. 동일한 변경 사항이 향후 릴리스에 포함됩니다.
 
 .단계
-. 로 이동합니다https://["NetApp 다운로드: StorageGRID"^].
+. 로 이동합니다https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 다운로드: StorageGRID"^].
 . 다운로드할 수 있는 업데이트 목록을 보려면 * 유형/버전 선택 * 필드의 아래쪽 화살표를 선택하십시오.
 +
 ** * StorageGRID 소프트웨어 버전 *: 11._x. y _

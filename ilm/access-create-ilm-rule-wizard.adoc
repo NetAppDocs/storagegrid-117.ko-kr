@@ -24,7 +24,7 @@ NOTE: 정책에 대한 기본 ILM 규칙을 만들려면 에 따릅니다 link:c
 * 사용할 클라우드 스토리지 풀을 구성했습니다. 을 참조하십시오 link:creating-cloud-storage-pool.html["클라우드 스토리지 풀을 생성합니다"].
 * 에 익숙합니다 link:data-protection-options-for-ingest.html["수집 옵션"].
 * S3 오브젝트 잠금에 사용하기 위해 규정 준수 규칙을 만들어야 하는 경우 에 익숙한 것입니다 link:requirements-for-s3-object-lock.html["S3 오브젝트 잠금에 대한 요구사항"].
-* 선택적으로 비디오를 시청했습니다. https://["비디오: StorageGRID 11.7의 정보 수명 주기 관리 규칙"^].
+* 선택적으로 비디오를 시청했습니다. https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c["비디오: StorageGRID 11.7의 정보 수명 주기 관리 규칙"^].
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c]
 image::../media/video-screenshot-ilm-rules-117.png[비디오: StorageGRID 11.7의 정보 수명 주기 관리 규칙]

@@ -74,7 +74,7 @@ StorageGRID 설명서
  a| 
 현재 사용 중인 플랫폼에 대한 설명서입니다
  a| 
-지원되는 버전은 를 참조하십시오 https://["상호 운용성 매트릭스 툴(IMT)"^].
+지원되는 버전은 를 참조하십시오 https://imt.netapp.com/matrix/#welcome["상호 운용성 매트릭스 툴(IMT)"^].
 
 |===
 
@@ -88,7 +88,7 @@ StorageGRID 설명서
 현재 그리드에서 실행 중인 StorageGRID 버전을 사용하여 확장 작업을 수행해야 합니다.
 
 .단계
-. 로 이동합니다 https://["NetApp 다운로드: StorageGRID"^].
+. 로 이동합니다 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 다운로드: StorageGRID"^].
 . 그리드에서 현재 실행 중인 StorageGRID 버전을 선택합니다.
 . NetApp 계정의 사용자 이름과 암호를 사용하여 로그인합니다.
 . 최종 사용자 사용권 계약을 읽고 확인란을 선택한 다음 * 동의 및 계속 * 을 선택합니다.

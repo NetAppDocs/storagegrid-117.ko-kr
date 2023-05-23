@@ -53,4 +53,4 @@ AutoSupport는 전송 프로토콜을 위해 HTTPS, HTTP 및 SMTP를 지원합�
 
 == 랜섬웨어 완화
 
-의 권장 사항을 따르면 랜섬웨어 공격으로부터 오브젝트 데이터를 보호할 수 있습니다 https://["StorageGRID를 통한 랜섬웨어 방어"^].
+의 권장 사항을 따르면 랜섬웨어 공격으로부터 오브젝트 데이터를 보호할 수 있습니다 https://www.netapp.com/media/69498-tr-4921.pdf["StorageGRID를 통한 랜섬웨어 방어"^].

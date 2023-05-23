@@ -275,7 +275,7 @@ image::../media/seven_segment_display_codes_for_e2800.gif[E2800용 7세그먼트
 
 
 .관련 정보
-* https://["NetApp 지원"^]
+* https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"^]
 * link:../sg6000/powering-on-sg6000-cn-controller-and-verifying-operation.html["SG6000-CN 컨트롤러의 전원을 켜고 작동을 확인합니다"]
 
 
@@ -662,8 +662,8 @@ E2800 컨트롤러 설치 또는 통신에 실패했습니다.
 
 
 .관련 정보
-* https://["NetApp 지원"^]
-* https://["E5700 및 E2800 시스템 모니터링 가이드"^]
+* https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"^]
+* https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["E5700 및 E2800 시스템 모니터링 가이드"^]
 
 
 --

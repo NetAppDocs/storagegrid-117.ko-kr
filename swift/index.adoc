@@ -38,4 +38,4 @@ HTTP
 
 |===
 .관련 정보
-http://["OpenStack: 오브젝트 스토리지 API"^]
+http://docs.openstack.org/developer/swift/api/object_api_v1_overview.html["OpenStack: 오브젝트 스토리지 API"^]

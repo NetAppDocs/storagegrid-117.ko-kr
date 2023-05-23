@@ -105,7 +105,7 @@ IMPORTANT: 성능 저하를 방지하려면 케이블을 비틀거나 접거나 
 . 어플라이언스 노드가 그리드 관리자에 표시되고 경고가 나타나지 않는지 확인합니다.
 
 
-부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
+부품을 교체한 후 키트와 함께 제공된 RMA 지침에 따라 오류가 발생한 부품을 NetApp에 반환합니다. 를 참조하십시오 https://mysupport.netapp.com/site/info/rma["부품 반품 및 앰프, 교체"^] 페이지를 참조하십시오.
 
 .관련 정보
 link:../installconfig/sg6000-cn-installing-into-cabinet-or-rack.html["캐비닛 또는 랙에 SG6000-CN을 설치합니다"]
