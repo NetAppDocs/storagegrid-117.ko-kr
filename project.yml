@@ -56,7 +56,7 @@ sidebar:
     - section: sg100-1000
   - title: StorageGRID를 활성화합니다
     url: "/storagegrid-enable.html"
-  - title: 이전 버전
+  - title: 기타 버전
     url: "/earlier-versions.html"
   - title: 법적 고지
     url: "/legal-notices.html"
@@ -140,7 +140,7 @@ homepage:
       url: https://netapp.com/blog/
     - title: NetApp 커뮤니티
       url: https://community.netapp.com/
-  - title: 이전 버전
+  - title: 기타 버전
     links:
     - title: StorageGRID 11.6 문서
       url: https://docs.netapp.com/us-en/storagegrid-116/index.html
