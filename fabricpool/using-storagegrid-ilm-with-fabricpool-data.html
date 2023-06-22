@@ -3318,6 +3318,8 @@
   
 
 
+
+
         </li>
       </ul>
     
@@ -10573,7 +10575,14 @@
       class=" "
     ><a class="na-navbar-padding" href="/ko-kr/storagegrid-117/fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html">
         기타 모범 사례
-      </a></li></ul></li></ul></li></ul></li><li 
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID에서 FabricPool 데이터를 제거합니다"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ko-kr/storagegrid-117/fabricpool/remove-fabricpool-data.html">
+        StorageGRID에서 FabricPool 데이터를 제거합니다
+      </a></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="StorageGRID를 사용합니다"
       data-li-level="1" 
@@ -15005,7 +15014,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-18 18:26:57 +0000">05/18/2023</time>
+    <time datetime="2023-06-22 22:02:31 +0000">06/22/2023</time>
     
   
 
@@ -15029,6 +15038,18 @@
 </td>
 <td class="content">
 다음 ILM 규칙 및 정책은 예일 뿐입니다. ILM 규칙을 구성하는 방법은 여러 가지가 있습니다. 새 정책을 활성화하기 전에 제안된 정책을 시뮬레이션하여 콘텐츠가 손실로부터 보호되도록 의도한 대로 동작하는지 확인합니다. 자세한 내용은 을 참조하십시오 <a href="../ilm/index.html">"ILM을 사용하여 개체를 관리합니다"</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/storagegrid-117/images/caution.svg" alt="주의">
+</td>
+<td class="content">
+데이터 손실을 방지하려면 FabricPool 클라우드 계층 데이터를 만료 또는 삭제할 ILM 규칙을 사용하지 마십시오. StorageGRID ILM에서 FabricPool 객체가 삭제되지 않도록 보존 기간을 * Forever * 로 설정합니다.
 </td>
 </tr>
 </table>
@@ -15129,7 +15150,19 @@
 <p>0일째 매장에서 영원히</p>
 </div>
 <div class="paragraph">
-<p>덴버에서 2+1 EC 방식을 사용하여 삭제 코딩을 통해 오브젝트를 저장합니다.</p>
+<p>덴버에서 2+1 EC 방식을 사용하여 삭제 코딩을 통해 오브젝트를 저장하고 이러한 오브젝트를 StorageGRID에 영구 보관합니다.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/storagegrid-117/images/caution.svg" alt="주의">
+</td>
+<td class="content">
+데이터 손실을 방지하려면 FabricPool 클라우드 계층 데이터를 만료 또는 삭제할 ILM 규칙을 사용하지 마십시오.
+</td>
+</tr>
+</table>
 </div></div></td>
 </tr>
 <tr>
@@ -15237,7 +15270,7 @@
 <p>다른 모든 버킷의 모든 객체가 복제됩니다. 두 개의 복제본이 생성되고 두 개의 서로 다른 스토리지 노드에 배치됩니다.</p>
 </li>
 <li>
-<p>삭제 코딩 및 복제된 복사본은 ONTAP에서 삭제될 때까지 StorageGRID에서 유지됩니다. StorageGRID ILM은 이러한 항목을 삭제하지 않습니다.</p>
+<p>복사본은 StorageGRID에서 영구적으로 유지됩니다. StorageGRID ILM은 이러한 개체를 삭제하지 않습니다.</p>
 </li>
 </ul>
 </div>

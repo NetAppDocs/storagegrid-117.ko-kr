@@ -3318,6 +3318,8 @@
   
 
 
+
+
         </li>
       </ul>
     
@@ -10573,7 +10575,14 @@
       class=" "
     ><a class="na-navbar-padding" href="/ko-kr/storagegrid-117/fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html">
         기타 모범 사례
-      </a></li></ul></li></ul></li></ul></li><li 
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID에서 FabricPool 데이터를 제거합니다"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ko-kr/storagegrid-117/fabricpool/remove-fabricpool-data.html">
+        StorageGRID에서 FabricPool 데이터를 제거합니다
+      </a></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="StorageGRID를 사용합니다"
       data-li-level="1" 
@@ -15005,7 +15014,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-18 18:26:57 +0000">05/18/2023</time>
+    <time datetime="2023-06-22 22:02:31 +0000">06/22/2023</time>
     
   
 
@@ -15067,7 +15076,19 @@ FabricPool에는 StorageGRID ILM 규칙 또는 정책에 대한 지식이 없습
 </div>
 </li>
 <li>
-<p>FabricPool 클라우드 계층 데이터가 만료되거나 삭제되는 ILM 규칙을 사용하지 마십시오. 각 ILM 규칙의 보존 기간을 ""Forever""로 설정하여 StorageGRID ILM에서 FabricPool 개체가 삭제되지 않도록 합니다.</p>
+<p>필요한 경우 <a href="remove-fabricpool-data.html">"StorageGRID에서 FabricPool 데이터를 제거합니다"</a>에서 ONTAP를 사용하여 FabricPool 볼륨에 대한 모든 데이터를 검색하고 성능 계층으로 상향 이동합니다.</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/storagegrid-117/images/caution.svg" alt="주의">
+</td>
+<td class="content">
+데이터 손실을 방지하려면 FabricPool 클라우드 계층 데이터를 만료 또는 삭제할 ILM 규칙을 사용하지 마십시오. 각 ILM 규칙의 보존 기간을 * Forever * 로 설정하여 StorageGRID ILM에서 FabricPool 개체가 삭제되지 않도록 합니다.
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>FabricPool 클라우드 계층 데이터를 버킷에서 다른 위치로 이동할 규칙을 만들지 마십시오. 클라우드 스토리지 풀을 사용하여 FabricPool 데이터를 다른 오브젝트 저장소로 이동할 수는 없습니다. 마찬가지로 아카이브 노드를 사용하여 FabricPool 데이터를 테이프에 아카이빙할 수 없습니다.</p>
