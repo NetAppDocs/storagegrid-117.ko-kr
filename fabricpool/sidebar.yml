@@ -41,3 +41,5 @@ entries:
     url: "/fabricpool/best-practices-ilm.html"
   - title: 기타 모범 사례
     url: "/fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html"
+- title: StorageGRID에서 FabricPool 데이터를 제거합니다
+  url: "/fabricpool/remove-fabricpool-data.html"
