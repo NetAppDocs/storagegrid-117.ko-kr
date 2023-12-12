@@ -18,6 +18,9 @@ AutoSupport 메시지가 전송되지 않으면 * AutoSupport * 페이지의 * �
 image::../media/autosupport_results_tab.png[AutoSupport 메시지 전송 실패]
 
 
+NOTE: AutoSupport 메시지를 NetApp에 전달하도록 프록시 서버를 구성한 경우 link:configuring-admin-proxy-settings.html["프록시 서버 구성 설정이 올바른지 확인합니다"].
+
+
 
 == Weekly AutoSupport 메시지 실패
 

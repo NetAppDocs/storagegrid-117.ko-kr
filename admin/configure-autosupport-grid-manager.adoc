@@ -18,6 +18,9 @@ StorageGRID를 처음 설치할 때 AutoSupport 기능 및 개별 AutoSupport �
 * 루트 액세스 또는 기타 그리드 구성 권한이 있습니다.
 * AutoSupport 메시지를 보내는 데 HTTPS를 사용할 경우, 직접 또는 에서 기본 관리자 노드에 대한 아웃바운드 인터넷 액세스를 제공했습니다 link:configuring-admin-proxy-settings.html["프록시 서버 사용"] (인바운드 연결은 필요하지 않음).
 * StorageGRID AutoSupport 페이지에서 HTTP를 선택한 경우 AutoSupport 메시지를 HTTPS로 전달하도록 프록시 서버를 구성했습니다. NetApp의 AutoSupport 서버는 HTTP를 사용하여 전송되는 메시지를 거부합니다.
++
+link:configuring-admin-proxy-settings.html["관리자 프록시 설정 구성에 대해 자세히 알아봅니다"].
+
 * AutoSupport 메시지의 프로토콜로 SMTP를 사용할 경우 SMTP 메일 서버를 구성했습니다. 알람 이메일 알림(레거시 시스템)에 동일한 메일 서버 구성이 사용됩니다.
 
 
