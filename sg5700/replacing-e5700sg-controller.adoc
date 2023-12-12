@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, replace, E5700sg, controller, remove, removing, removal, install, installing, installation 
 summary: E700SG 컨트롤러가 최적의 상태로 작동하지 않거나 장애가 발생한 경우 교체해야 할 수 있습니다. 
 ---
-= E5500SG 컨트롤러를 교체합니다
+= E5700SG 컴퓨팅 컨트롤러를 교체합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

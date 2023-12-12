@@ -22,9 +22,9 @@ entries:
 - title: 하드웨어 절차
   pdf-filename: 하드웨어 절차 - SG5700
   entries:
-  - title: E2800 컨트롤러를 교체합니다
+  - title: E2800 스토리지 컨트롤러를 교체합니다
     url: "/sg5700/replacing-e2800-controller.html"
-  - title: E5500SG 컨트롤러를 교체합니다
+  - title: E5700SG 컴퓨팅 컨트롤러를 교체합니다
     url: "/sg5700/replacing-e5700sg-controller.html"
   - title: 다른 하드웨어 구성 요소를 교체합니다
     url: "/sg5700/replacing-other-hardware-components-sg5700.html"
