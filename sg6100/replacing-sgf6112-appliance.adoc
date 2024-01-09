@@ -188,6 +188,9 @@ WARNING: 어플라이언스 설치 프로그램이 디스크 드라이브를 다
 +
 ... 정적 IP, 넷마스크 및 게이트웨이를 사용하도록 BMC 구성을 복원하려면 다음 명령을 입력합니다.
 +
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
 `*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
 
 +
