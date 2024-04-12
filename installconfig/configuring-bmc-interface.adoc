@@ -15,7 +15,7 @@ SGF6112, SG6000 또는 서비스 어플라이언스의 베이스보드 관리 �
 
 어플라이언스를 설치할 때 BMC를 구성하려면 이 섹션의 다음 절차를 따르십시오.
 
-* link:../installconfig/changing-root-password-for-bmc-interface.html["BMC 인터페이스의 루트 암호를 변경합니다"]
+* link:../installconfig/changing-root-password-for-bmc-interface.html["BMC 인터페이스의 관리자 또는 루트 암호를 변경합니다"]
 * link:../installconfig/setting-ip-address-for-bmc-management-port.html["BMC 관리 포트의 IP 주소를 설정합니다"]
 * link:../installconfig/accessing-bmc-interface.html["BMC 인터페이스에 액세스합니다"]
 * link:../installconfig/configuring-snmp-settings-for-bmc.html["SNMP 설정을 구성합니다"]
